@@ -1,2 +1,3 @@
 # travis_ci
-auto_test
+.. image:: https://travis-ci.org/shujunge/travis_ci/travis_ci.svg?branch=master
+    :target: https://travis-ci.org/shujunge/travis_ci/travis_ci
