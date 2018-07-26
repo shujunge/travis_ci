@@ -1,1 +1,1 @@
-print("hello cs writen by zf!")
+print("hello world!")
