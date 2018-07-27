@@ -1,17 +1,23 @@
-language: python
+# Travis example for Modern C++ by Rafał Pocztarski
+# For more languages and info see:
+# https://github.com/rsp/travis-hello#readme
 
-python:
-  - "3.6"
-
-cache: pip
-
+sudo: false
+language: cpp
+compiler:
+  - gcc
+  - clang
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    - llvm-toolchain-precise-3.8
+    packages:
+    - g++-6
+    - clang-3.8
 install:
-  - pip install -r requirements.txt
-
+- "[ $CXX = g++ ] && export CXX=g++-6 || true"
+- "[ $CXX = clang++ ] && export CXX=clang++-3.8 || true"
 script:
-  - python3 auto.py 
-  - python3 main.py
-
-notifications:
-  email: worldisonlyme@163.com
-
+  - make
+  - make test
