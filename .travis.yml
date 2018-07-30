@@ -9,7 +9,8 @@ install:
   - pip install -r requirements.txt
 
 script:
-  nosetests tests
+  -nosetests tests
+  -python3 RNNmodel.py
 
 
 notifications:
