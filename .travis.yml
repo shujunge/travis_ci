@@ -10,7 +10,7 @@ install:
 
 script:
   nosetests tests
-  - python RNNmodel.py 
+  - Python RNNmodel.py 
 
 notifications:
   email: worldisonlyme@163.com
