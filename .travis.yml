@@ -9,8 +9,8 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - python3 cs.py 
-  - python3 main.py
+  nosetests tests
+  - python3 RNNmodel.py 
 
 notifications:
   email: worldisonlyme@163.com
