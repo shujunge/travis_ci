@@ -241,7 +241,7 @@ if __name__=="__main__":
   if input!= None:
     net= Model(inputs=[input],outputs=[output])
     net.summary()
-    Plot_model(net,show_shapes=True)
+    #Plot_model(net,show_shapes=True)
   else :
     print("model was not created!")
   
