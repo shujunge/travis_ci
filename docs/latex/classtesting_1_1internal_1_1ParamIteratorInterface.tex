@@ -1,0 +1,103 @@
+\hypertarget{classtesting_1_1internal_1_1ParamIteratorInterface}{}\section{testing\+:\+:internal\+:\+:Param\+Iterator\+Interface$<$ T $>$ Class Template Reference}
+\label{classtesting_1_1internal_1_1ParamIteratorInterface}\index{testing\+::internal\+::\+Param\+Iterator\+Interface$<$ T $>$@{testing\+::internal\+::\+Param\+Iterator\+Interface$<$ T $>$}}
+
+
+{\ttfamily \#include $<$gtest-\/param-\/util.\+h$>$}
+
+
+
+Inheritance diagram for testing\+:\+:internal\+:\+:Param\+Iterator\+Interface$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_1_1internal_1_1ParamIteratorInterface__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface_adf6ba49e6b54a6e3b15dbd5733988bef}{$\sim$\+Param\+Iterator\+Interface} ()
+\item 
+virtual const \hyperlink{classtesting_1_1internal_1_1ParamGeneratorInterface}{Param\+Generator\+Interface}$<$ T $>$ $\ast$ \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface_a17500953df75ecda1ace46c08ff731e9}{Base\+Generator} () const =0
+\item 
+virtual void \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface_a600dbd35fcb551463e379516a1abea48}{Advance} ()=0
+\item 
+virtual \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface} $\ast$ \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface_a4998c23e27e2943d97546011aa35db80}{Clone} () const =0
+\item 
+virtual const T $\ast$ \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface_adfff808576d929085679c315b255af7e}{Current} () const =0
+\item 
+virtual bool \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface_a9d811697a752d46f7bd6a0082f9040a3}{Equals} (const \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface} \&other) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1ParamIteratorInterface_adf6ba49e6b54a6e3b15dbd5733988bef}\label{classtesting_1_1internal_1_1ParamIteratorInterface_adf6ba49e6b54a6e3b15dbd5733988bef}} 
+\index{testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}!````~Param\+Iterator\+Interface@{$\sim$\+Param\+Iterator\+Interface}}
+\index{````~Param\+Iterator\+Interface@{$\sim$\+Param\+Iterator\+Interface}!testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}}
+\subsubsection{\texorpdfstring{$\sim$\+Param\+Iterator\+Interface()}{~ParamIteratorInterface()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{testing\+::internal\+::\+Param\+Iterator\+Interface}$<$ T $>$\+::$\sim$\hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1ParamIteratorInterface_a600dbd35fcb551463e379516a1abea48}\label{classtesting_1_1internal_1_1ParamIteratorInterface_a600dbd35fcb551463e379516a1abea48}} 
+\index{testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}!Advance@{Advance}}
+\index{Advance@{Advance}!testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}}
+\subsubsection{\texorpdfstring{Advance()}{Advance()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual void \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{testing\+::internal\+::\+Param\+Iterator\+Interface}$<$ T $>$\+::Advance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a167e8b38118c8635d5849daf924a517b}{testing\+::internal\+::\+Cartesian\+Product\+Generator$<$ T $>$\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}, \hyperlink{classtesting_1_1internal_1_1ValuesInIteratorRangeGenerator_1_1Iterator_a5ff56489536cf5d90ed0ac07ffeb476b}{testing\+::internal\+::\+Values\+In\+Iterator\+Range\+Generator$<$ T $>$\+::\+Iterator}, and \hyperlink{classtesting_1_1internal_1_1RangeGenerator_1_1Iterator_ad17bd99e352c43b8ab654a4ad479d06e}{testing\+::internal\+::\+Range\+Generator$<$ T, Increment\+T $>$\+::\+Iterator}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1ParamIteratorInterface_a17500953df75ecda1ace46c08ff731e9}\label{classtesting_1_1internal_1_1ParamIteratorInterface_a17500953df75ecda1ace46c08ff731e9}} 
+\index{testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}!Base\+Generator@{Base\+Generator}}
+\index{Base\+Generator@{Base\+Generator}!testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}}
+\subsubsection{\texorpdfstring{Base\+Generator()}{BaseGenerator()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual const \hyperlink{classtesting_1_1internal_1_1ParamGeneratorInterface}{Param\+Generator\+Interface}$<$T$>$$\ast$ \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{testing\+::internal\+::\+Param\+Iterator\+Interface}$<$ T $>$\+::Base\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a8fa3ea322a1348fc8065481aba76e860}{testing\+::internal\+::\+Cartesian\+Product\+Generator$<$ T $>$\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}, \hyperlink{classtesting_1_1internal_1_1ValuesInIteratorRangeGenerator_1_1Iterator_a27445e4d010ffde9d3f2f9ada5d54d0f}{testing\+::internal\+::\+Values\+In\+Iterator\+Range\+Generator$<$ T $>$\+::\+Iterator}, and \hyperlink{classtesting_1_1internal_1_1RangeGenerator_1_1Iterator_aa1dc4151e1eed1c546059ecb4f72440b}{testing\+::internal\+::\+Range\+Generator$<$ T, Increment\+T $>$\+::\+Iterator}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1ParamIteratorInterface_a4998c23e27e2943d97546011aa35db80}\label{classtesting_1_1internal_1_1ParamIteratorInterface_a4998c23e27e2943d97546011aa35db80}} 
+\index{testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}!Clone@{Clone}}
+\index{Clone@{Clone}!testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface}$\ast$ \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{testing\+::internal\+::\+Param\+Iterator\+Interface}$<$ T $>$\+::Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a0b434e09b32dfd6b444085cf95dc22ab}{testing\+::internal\+::\+Cartesian\+Product\+Generator$<$ T $>$\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}, \hyperlink{classtesting_1_1internal_1_1ValuesInIteratorRangeGenerator_1_1Iterator_a2c5ccf4da12cfb089829438d679ae35e}{testing\+::internal\+::\+Values\+In\+Iterator\+Range\+Generator$<$ T $>$\+::\+Iterator}, and \hyperlink{classtesting_1_1internal_1_1RangeGenerator_1_1Iterator_a61a764294b66272d730f5ff5e0acdcf4}{testing\+::internal\+::\+Range\+Generator$<$ T, Increment\+T $>$\+::\+Iterator}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1ParamIteratorInterface_adfff808576d929085679c315b255af7e}\label{classtesting_1_1internal_1_1ParamIteratorInterface_adfff808576d929085679c315b255af7e}} 
+\index{testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}!Current@{Current}}
+\index{Current@{Current}!testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}}
+\subsubsection{\texorpdfstring{Current()}{Current()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual const T$\ast$ \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{testing\+::internal\+::\+Param\+Iterator\+Interface}$<$ T $>$\+::Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_ab7052f320ab8ff3113a3e744a1bff07e}{testing\+::internal\+::\+Cartesian\+Product\+Generator$<$ T $>$\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}, \hyperlink{classtesting_1_1internal_1_1ValuesInIteratorRangeGenerator_1_1Iterator_a55bd2a0d5a630478e32ec2efe08e37e4}{testing\+::internal\+::\+Values\+In\+Iterator\+Range\+Generator$<$ T $>$\+::\+Iterator}, and \hyperlink{classtesting_1_1internal_1_1RangeGenerator_1_1Iterator_acbdfc5919d37fb9514914afb041e50ff}{testing\+::internal\+::\+Range\+Generator$<$ T, Increment\+T $>$\+::\+Iterator}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1ParamIteratorInterface_a9d811697a752d46f7bd6a0082f9040a3}\label{classtesting_1_1internal_1_1ParamIteratorInterface_a9d811697a752d46f7bd6a0082f9040a3}} 
+\index{testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}!Equals@{Equals}}
+\index{Equals@{Equals}!testing\+::internal\+::\+Param\+Iterator\+Interface@{testing\+::internal\+::\+Param\+Iterator\+Interface}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual bool \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{testing\+::internal\+::\+Param\+Iterator\+Interface}$<$ T $>$\+::Equals (\begin{DoxyParamCaption}\item[{const \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classtesting_1_1internal_1_1ValuesInIteratorRangeGenerator_1_1Iterator_a75604bc318aca22ff8607b68bfb44e96}{testing\+::internal\+::\+Values\+In\+Iterator\+Range\+Generator$<$ T $>$\+::\+Iterator}, and \hyperlink{classtesting_1_1internal_1_1RangeGenerator_1_1Iterator_a534406abbddb137d7672c2b53d5bff0b}{testing\+::internal\+::\+Range\+Generator$<$ T, Increment\+T $>$\+::\+Iterator}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tests/googletest/include/gtest/internal/\hyperlink{gtest-param-util_8h}{gtest-\/param-\/util.\+h}\end{DoxyCompactItemize}

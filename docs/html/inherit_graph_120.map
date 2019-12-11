@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classtesting_1_1Test.html" title="testing::Test" alt="" coords="67,56,161,83"/>
+<area shape="rect" id="node2" href="$classtesting_1_1TestWithParam.html" title="testing::TestWithParam\&lt; T \&gt;" alt="" coords="271,19,463,45"/>
+<area shape="rect" id="node3" href="$classtesting_1_1TestWithParam.html" title="testing::TestWithParam\l\&lt; int \&gt;" alt="" coords="287,82,447,123"/>
+<area shape="rect" id="node4" href="$classExternalInstantiationTest.html" title="ExternalInstantiationTest" alt="" coords="534,60,701,87"/>
+<area shape="rect" id="node5" href="$classInstantiationInMultipleTranslationUnitsTest.html" title="InstantiationInMultipleTranslation\lUnitsTest" alt="" coords="511,111,724,153"/>
+<area shape="rect" id="node6" href="$classtesting_1_1WithParamInterface.html" title="testing::WithParamInterface\&lt; T \&gt;" alt="" coords="5,5,223,32"/>
+<area shape="rect" id="node7" href="$classtesting_1_1WithParamInterface.html" title="testing::WithParamInterface\l\&lt; int \&gt;" alt="" coords="21,107,207,149"/>
+</map>

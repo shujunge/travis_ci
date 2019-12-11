@@ -1,0 +1,518 @@
+\hypertarget{gtest-internal_8h}{}\section{tests/googletest/include/gtest/internal/gtest-\/internal.h File Reference}
+\label{gtest-internal_8h}\index{tests/googletest/include/gtest/internal/gtest-\/internal.\+h@{tests/googletest/include/gtest/internal/gtest-\/internal.\+h}}
+{\ttfamily \#include \char`\"{}gtest/internal/gtest-\/port.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}gtest/gtest-\/message.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gtest/internal/gtest-\/filepath.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gtest/internal/gtest-\/string.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gtest/internal/gtest-\/type-\/util.\+h\char`\"{}}\newline
+Include dependency graph for gtest-\/internal.h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gtest-internal_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gtest-internal_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtesting_1_1internal_1_1IgnoredValue}{testing\+::internal\+::\+Ignored\+Value}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1IgnoredValue_1_1Sink}{testing\+::internal\+::\+Ignored\+Value\+::\+Sink}
+\item 
+class \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point$<$ Raw\+Type $>$}
+\item 
+union \hyperlink{uniontesting_1_1internal_1_1FloatingPoint_1_1FloatingPointUnion}{testing\+::internal\+::\+Floating\+Point$<$ Raw\+Type $>$\+::\+Floating\+Point\+Union}
+\item 
+class \hyperlink{classtesting_1_1internal_1_1TypeIdHelper}{testing\+::internal\+::\+Type\+Id\+Helper$<$ T $>$}
+\item 
+class \hyperlink{classtesting_1_1internal_1_1TestFactoryBase}{testing\+::internal\+::\+Test\+Factory\+Base}
+\item 
+class \hyperlink{classtesting_1_1internal_1_1TestFactoryImpl}{testing\+::internal\+::\+Test\+Factory\+Impl$<$ Test\+Class $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1CodeLocation}{testing\+::internal\+::\+Code\+Location}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1SuiteApiResolver}{testing\+::internal\+::\+Suite\+Api\+Resolver$<$ T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1ConstCharPtr}{testing\+::internal\+::\+Const\+Char\+Ptr}
+\item 
+class \hyperlink{classtesting_1_1internal_1_1Random}{testing\+::internal\+::\+Random}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1CompileAssertTypesEqual}{testing\+::internal\+::\+Compile\+Assert\+Types\+Equal$<$ T1, T2 $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1CompileAssertTypesEqual_3_01T_00_01T_01_4}{testing\+::internal\+::\+Compile\+Assert\+Types\+Equal$<$ T, T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1RemoveReference}{testing\+::internal\+::\+Remove\+Reference$<$ T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1RemoveReference_3_01T_01_6_01_4}{testing\+::internal\+::\+Remove\+Reference$<$ T \& $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1RemoveConst}{testing\+::internal\+::\+Remove\+Const$<$ T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1RemoveConst_3_01const_01T_01_4}{testing\+::internal\+::\+Remove\+Const$<$ const T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1RemoveConst_3_01const_01T[N]_4}{testing\+::internal\+::\+Remove\+Const$<$ const T\mbox{[}\+N\mbox{]}$>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1IsAProtocolMessage}{testing\+::internal\+::\+Is\+A\+Protocol\+Message$<$ T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1IsHashTable}{testing\+::internal\+::\+Is\+Hash\+Table$<$ T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1IsRecursiveContainerImpl}{testing\+::internal\+::\+Is\+Recursive\+Container\+Impl$<$ C, bool $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1IsRecursiveContainerImpl_3_01C_00_01false_01_4}{testing\+::internal\+::\+Is\+Recursive\+Container\+Impl$<$ C, false $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1IsRecursiveContainerImpl_3_01C_00_01true_01_4}{testing\+::internal\+::\+Is\+Recursive\+Container\+Impl$<$ C, true $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1IsRecursiveContainer}{testing\+::internal\+::\+Is\+Recursive\+Container$<$ C $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1EnableIf}{testing\+::internal\+::\+Enable\+If$<$ bool $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1EnableIf_3_01true_01_4}{testing\+::internal\+::\+Enable\+If$<$ true $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1RelationToSourceReference}{testing\+::internal\+::\+Relation\+To\+Source\+Reference}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1RelationToSourceCopy}{testing\+::internal\+::\+Relation\+To\+Source\+Copy}
+\item 
+class \hyperlink{classtesting_1_1internal_1_1NativeArray}{testing\+::internal\+::\+Native\+Array$<$ Element $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1IndexSequence}{testing\+::internal\+::\+Index\+Sequence$<$ Is $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1DoubleSequence}{testing\+::internal\+::\+Double\+Sequence$<$ plus\+\_\+one, T, sizeof\+T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1DoubleSequence_3_01true_00_01IndexSequence_3_01I_8_8_8_01_4_00_01sizeofT_01_4}{testing\+::internal\+::\+Double\+Sequence$<$ true, Index\+Sequence$<$ I... $>$, sizeof\+T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1DoubleSequence_3_01false_00_01IndexSequence_3_01I_8_8_8_01_4_00_01sizeofT_01_4}{testing\+::internal\+::\+Double\+Sequence$<$ false, Index\+Sequence$<$ I... $>$, sizeof\+T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1MakeIndexSequence}{testing\+::internal\+::\+Make\+Index\+Sequence$<$ N $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1MakeIndexSequence_3_010_01_4}{testing\+::internal\+::\+Make\+Index\+Sequence$<$ 0 $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1ElemFromListImpl}{testing\+::internal\+::\+Elem\+From\+List\+Impl$<$ T, size\+\_\+t, size\+\_\+t $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1ElemFromListImpl_3_01T_00_01I_00_01I_01_4}{testing\+::internal\+::\+Elem\+From\+List\+Impl$<$ T, I, I $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1ElemFromList}{testing\+::internal\+::\+Elem\+From\+List$<$ N, I, T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1ElemFromList_3_01N_00_01IndexSequence_3_01I_8_8_8_01_4_00_01T_8_8_8_01_4}{testing\+::internal\+::\+Elem\+From\+List$<$ N, Index\+Sequence$<$ I... $>$, T... $>$}
+\item 
+class \hyperlink{classtesting_1_1internal_1_1FlatTuple}{testing\+::internal\+::\+Flat\+Tuple$<$ T $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1FlatTupleElemBase}{testing\+::internal\+::\+Flat\+Tuple\+Elem\+Base$<$ Derived, I $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1FlatTupleElemBase_3_01FlatTuple_3_01T_8_8_8_01_4_00_01I_01_4}{testing\+::internal\+::\+Flat\+Tuple\+Elem\+Base$<$ Flat\+Tuple$<$ T... $>$, I $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1FlatTupleBase}{testing\+::internal\+::\+Flat\+Tuple\+Base$<$ Derived, Idx $>$}
+\item 
+struct \hyperlink{structtesting_1_1internal_1_1FlatTupleBase_3_01FlatTuple_3_01T_8_8_8_01_4_00_01IndexSequence_3_01Idx_8_8_8_01_4_01_4}{testing\+::internal\+::\+Flat\+Tuple\+Base$<$ Flat\+Tuple$<$ T... $>$, Index\+Sequence$<$ Idx... $>$ $>$}
+\item 
+class \hyperlink{classtesting_1_1internal_1_1FlatTuple}{testing\+::internal\+::\+Flat\+Tuple$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceproto2}{proto2}
+\item 
+ \hyperlink{namespacetesting}{testing}
+\item 
+ \hyperlink{namespacetesting_1_1internal}{testing\+::internal}
+\item 
+ \hyperlink{namespacetesting_1_1internal_1_1edit__distance}{testing\+::internal\+::edit\+\_\+distance}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+}(foo,  bar)~\hyperlink{gtest-internal_8h_aa39fb5346d3573feebe4257cb3a01fde}{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+I\+M\+P\+L\+\_\+}(foo, bar)
+\item 
+\#define \hyperlink{gtest-internal_8h_aa39fb5346d3573feebe4257cb3a01fde}{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+I\+M\+P\+L\+\_\+}(foo,  bar)~foo \#\# bar
+\item 
+\#define \hyperlink{gtest-internal_8h_affa935d4361fa573644e9c739dde2b14}{G\+T\+E\+S\+T\+\_\+\+S\+T\+R\+I\+N\+G\+I\+F\+Y\+\_\+}(name)~\#name
+\item 
+\#define \hyperlink{gtest-internal_8h_a84c72f25a6a6600e3ff8381ca6982ae9}{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+}(T)~typename \+::\hyperlink{structtesting_1_1internal_1_1RemoveReference}{testing\+::internal\+::\+Remove\+Reference}$<$T$>$\+::type
+\item 
+\#define \hyperlink{gtest-internal_8h_a2ffec8c60510eb130af387f5ce9a756a}{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+C\+O\+N\+S\+T\+\_\+}(T)~typename \+::\hyperlink{structtesting_1_1internal_1_1RemoveConst}{testing\+::internal\+::\+Remove\+Const}$<$T$>$\+::type
+\item 
+\#define \hyperlink{gtest-internal_8h_a874567b176266188fabfffb8393267ce}{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+A\+N\+D\+\_\+\+C\+O\+N\+S\+T\+\_\+}(T)~\hyperlink{gtest-internal_8h_a2ffec8c60510eb130af387f5ce9a756a}{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+C\+O\+N\+S\+T\+\_\+}(\hyperlink{gtest-internal_8h_a84c72f25a6a6600e3ff8381ca6982ae9}{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+}(T))
+\item 
+\#define \hyperlink{gtest-internal_8h_a8d70025c45a47a493780746dfd66d565}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+T\+\_\+}(file,  line,  message,  result\+\_\+type)
+\item 
+\#define \hyperlink{gtest-internal_8h_a94c73d5368ec946bc354d0992ad00810}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}(message,  result\+\_\+type)~\hyperlink{gtest-internal_8h_a8d70025c45a47a493780746dfd66d565}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+T\+\_\+}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, message, result\+\_\+type)
+\item 
+\#define \hyperlink{gtest-internal_8h_a0f9a4c3ea82cc7bf4478eaffdc168358}{G\+T\+E\+S\+T\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}(message)~return \hyperlink{gtest-internal_8h_a94c73d5368ec946bc354d0992ad00810}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}(message, \+::testing\+::\+Test\+Part\+Result\+::k\+Fatal\+Failure)
+\item 
+\#define \hyperlink{gtest-internal_8h_a6cb7482cfa03661a91c698eb5895f642}{G\+T\+E\+S\+T\+\_\+\+N\+O\+N\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}(message)~\hyperlink{gtest-internal_8h_a94c73d5368ec946bc354d0992ad00810}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}(message, \+::testing\+::\+Test\+Part\+Result\+::k\+Non\+Fatal\+Failure)
+\item 
+\#define \hyperlink{gtest-internal_8h_abe012b550eb3807e8c49f7e161bd1567}{G\+T\+E\+S\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+}(message)~\hyperlink{gtest-internal_8h_a94c73d5368ec946bc354d0992ad00810}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}(message, \+::testing\+::\+Test\+Part\+Result\+::k\+Success)
+\item 
+\#define \hyperlink{gtest-internal_8h_ab75ed7a6cd9e466944ce680c1c07ab47}{G\+T\+E\+S\+T\+\_\+\+S\+K\+I\+P\+\_\+}(message)~return \hyperlink{gtest-internal_8h_a94c73d5368ec946bc354d0992ad00810}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}(message, \+::testing\+::\+Test\+Part\+Result\+::k\+Skip)
+\item 
+\#define \hyperlink{gtest-internal_8h_a2e66f7dfc5cb87e0fa0289f653173c69}{G\+T\+E\+S\+T\+\_\+\+S\+U\+P\+P\+R\+E\+S\+S\+\_\+\+U\+N\+R\+E\+A\+C\+H\+A\+B\+L\+E\+\_\+\+C\+O\+D\+E\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+B\+E\+L\+O\+W\+\_\+}(statement)~if (\+::\hyperlink{namespacetesting_1_1internal_a4d46f09c3bfe68700b7f728d2cc3782f}{testing\+::internal\+::\+Always\+True}()) \{ statement; \}
+\item 
+\#define \hyperlink{gtest-internal_8h_a3f71db93eaf30b0cfca9612b9ac32106}{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+}(statement,  expected\+\_\+exception,  fail)
+\item 
+\#define \hyperlink{gtest-internal_8h_a9a109d026b5a904646437d7570e13581}{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+}(statement,  fail)
+\item 
+\#define \hyperlink{gtest-internal_8h_af48bbd26d54d4afc5e4cef39b1c76ba3}{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+O\+W\+\_\+}(statement,  fail)
+\item 
+\#define \hyperlink{gtest-internal_8h_ae8912365e1d00a7a2bd248268c64aa1a}{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+B\+O\+O\+L\+E\+A\+N\+\_\+}(expression,  text,  actual,  expected,  fail)
+\item 
+\#define \hyperlink{gtest-internal_8h_a1b37a3c446836d33040f3266a6236081}{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}(statement,  fail)
+\item 
+\#define \hyperlink{gtest-internal_8h_ad4bc4ec847a06e7de981e81c9bb116cf}{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+N\+A\+M\+E\+\_\+}(test\+\_\+suite\+\_\+name,  test\+\_\+name)~test\+\_\+suite\+\_\+name\#\#\+\_\+\#\#test\+\_\+name\#\#\+\_\+\+Test
+\item 
+\#define \hyperlink{gtest-internal_8h_ab43103f7842de04474e362689f782a46}{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+}(test\+\_\+suite\+\_\+name,  test\+\_\+name,  parent\+\_\+class,  parent\+\_\+id)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Floating\+Point$<$ float $>$ \hyperlink{namespacetesting_1_1internal_a02e1981f5ff70609e6ac06e006ff519a}{testing\+::internal\+::\+Float}
+\item 
+typedef Floating\+Point$<$ double $>$ \hyperlink{namespacetesting_1_1internal_a66a7579b1893b260c31dad577f7a5c48}{testing\+::internal\+::\+Double}
+\item 
+typedef const void $\ast$ \hyperlink{namespacetesting_1_1internal_ab1114197d3c657d8b7f8e0c5caa12d00}{testing\+::internal\+::\+Type\+Id}
+\item 
+using \hyperlink{namespacetesting_1_1internal_a83e4e0732ac6a9dcfe6ee299dc1b9fa2}{testing\+::internal\+::\+Set\+Up\+Test\+Suite\+Func} = void($\ast$)()
+\item 
+using \hyperlink{namespacetesting_1_1internal_a8257a87aa42cebaa54b0c48a6ae657a5}{testing\+::internal\+::\+Tear\+Down\+Test\+Suite\+Func} = void($\ast$)()
+\item 
+using \hyperlink{namespacetesting_1_1internal_a04786aa10f8b0bf38a5ead94d00475f4}{testing\+::internal\+::\+Set\+Up\+Tear\+Down\+Suite\+Func\+Type} = void($\ast$)()
+\item 
+typedef int \hyperlink{namespacetesting_1_1internal_ad8f0c2883245f1df2a53618a49f0deb3}{testing\+::internal\+::\+Is\+Container}
+\item 
+typedef char \hyperlink{namespacetesting_1_1internal_abf080521ce135deb510e0a7830fd3d33}{testing\+::internal\+::\+Is\+Not\+Container}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacetesting_1_1internal_1_1edit__distance_ad46aa6da12aec1a3f166310478b53a08}{testing\+::internal\+::edit\+\_\+distance\+::\+Edit\+Type} \{ \hyperlink{namespacetesting_1_1internal_1_1edit__distance_ad46aa6da12aec1a3f166310478b53a08a7bdb9c74613a94f21b7489e0b5640a63}{testing\+::internal\+::edit\+\_\+distance\+::k\+Match}, 
+\hyperlink{namespacetesting_1_1internal_1_1edit__distance_ad46aa6da12aec1a3f166310478b53a08a63400b073f5b311a87d568b5ae27ffe8}{testing\+::internal\+::edit\+\_\+distance\+::k\+Add}, 
+\hyperlink{namespacetesting_1_1internal_1_1edit__distance_ad46aa6da12aec1a3f166310478b53a08a814768ef6cd0264a0a10b1e701a63e78}{testing\+::internal\+::edit\+\_\+distance\+::k\+Remove}, 
+\hyperlink{namespacetesting_1_1internal_1_1edit__distance_ad46aa6da12aec1a3f166310478b53a08afdbf30ecf9f32f60c646a34a358615f2}{testing\+::internal\+::edit\+\_\+distance\+::k\+Replace}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\+::std\+::string \hyperlink{namespacetesting_aa5717bb1144edd1d262d310ba70c82ed}{testing\+::\+Print\+To\+String} (const T \&value)
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} std\+::string \hyperlink{namespacetesting_1_1internal_af69e146a989e8d48def39a0cc59461c9}{testing\+::internal\+::\+Append\+User\+Message} (const std\+::string \&gtest\+\_\+msg, const Message \&user\+\_\+msg)
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} std\+::vector$<$ Edit\+Type $>$ \hyperlink{namespacetesting_1_1internal_1_1edit__distance_ad28f23b77f716200bc6644bfc7413a63}{testing\+::internal\+::edit\+\_\+distance\+::\+Calculate\+Optimal\+Edits} (const std\+::vector$<$ size\+\_\+t $>$ \&left, const std\+::vector$<$ size\+\_\+t $>$ \&right)
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} std\+::vector$<$ Edit\+Type $>$ \hyperlink{namespacetesting_1_1internal_1_1edit__distance_ad2258c5c811f8f262335f58641b33544}{testing\+::internal\+::edit\+\_\+distance\+::\+Calculate\+Optimal\+Edits} (const std\+::vector$<$ std\+::string $>$ \&left, const std\+::vector$<$ std\+::string $>$ \&right)
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} std\+::string \hyperlink{namespacetesting_1_1internal_1_1edit__distance_a48cffebc6d3169ad1df7849b5f7fb5ff}{testing\+::internal\+::edit\+\_\+distance\+::\+Create\+Unified\+Diff} (const std\+::vector$<$ std\+::string $>$ \&left, const std\+::vector$<$ std\+::string $>$ \&right, size\+\_\+t context=2)
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} std\+::string \hyperlink{namespacetesting_1_1internal_a513107ff8defa97d949937fc1350a56c}{testing\+::internal\+::\+Diff\+Strings} (const std\+::string \&left, const std\+::string \&right, size\+\_\+t $\ast$total\+\_\+line\+\_\+count)
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} Assertion\+Result \hyperlink{namespacetesting_1_1internal_ac61e2ba2cbf259fd6ee5ffd4e49c9445}{testing\+::internal\+::\+Eq\+Failure} (const char $\ast$expected\+\_\+expression, const char $\ast$actual\+\_\+expression, const std\+::string \&expected\+\_\+value, const std\+::string \&actual\+\_\+value, bool ignoring\+\_\+case)
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} std\+::string \hyperlink{namespacetesting_1_1internal_aed8d3ad4341f8f2de53440e39c995632}{testing\+::internal\+::\+Get\+Bool\+Assertion\+Failure\+Message} (const Assertion\+Result \&assertion\+\_\+result, const char $\ast$expression\+\_\+text, const char $\ast$actual\+\_\+predicate\+\_\+value, const char $\ast$expected\+\_\+predicate\+\_\+value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\Type\+Id \hyperlink{namespacetesting_1_1internal_a6b108e56fdc68ea937ffb3759fb55ab0}{testing\+::internal\+::\+Get\+Type\+Id} ()
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} Type\+Id \hyperlink{namespacetesting_1_1internal_a1e85cf16bb95b60f879d48ba1fbfc1c9}{testing\+::internal\+::\+Get\+Test\+Type\+Id} ()
+\item 
+Set\+Up\+Tear\+Down\+Suite\+Func\+Type \hyperlink{namespacetesting_1_1internal_a9579a78c229ea302caded45d65f77336}{testing\+::internal\+::\+Get\+Not\+Default\+Or\+Null} (Set\+Up\+Tear\+Down\+Suite\+Func\+Type a, Set\+Up\+Tear\+Down\+Suite\+Func\+Type def)
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} Test\+Info $\ast$ \hyperlink{namespacetesting_1_1internal_a7ab4072540184e26119ad853f45059f7}{testing\+::internal\+::\+Make\+And\+Register\+Test\+Info} (const char $\ast$test\+\_\+suite\+\_\+name, const char $\ast$name, const char $\ast$type\+\_\+param, const char $\ast$value\+\_\+param, Code\+Location code\+\_\+location, Type\+Id fixture\+\_\+class\+\_\+id, Set\+Up\+Test\+Suite\+Func set\+\_\+up\+\_\+tc, Tear\+Down\+Test\+Suite\+Func tear\+\_\+down\+\_\+tc, Test\+Factory\+Base $\ast$factory)
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} bool \hyperlink{namespacetesting_1_1internal_aac72b20299ad4a99554ce161e1769560}{testing\+::internal\+::\+Skip\+Prefix} (const char $\ast$prefix, const char $\ast$$\ast$pstr)
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} std\+::string \hyperlink{namespacetesting_1_1internal_ae7ae495d3207e26968dfbd537c5e6dee}{testing\+::internal\+::\+Get\+Current\+Os\+Stack\+Trace\+Except\+Top} (Unit\+Test $\ast$unit\+\_\+test, int skip\+\_\+count)
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} bool \hyperlink{namespacetesting_1_1internal_a4d46f09c3bfe68700b7f728d2cc3782f}{testing\+::internal\+::\+Always\+True} ()
+\item 
+bool \hyperlink{namespacetesting_1_1internal_a4b24c851ab13569b1b15b3d259b60d2e}{testing\+::internal\+::\+Always\+False} ()
+\item 
+{\footnotesize template$<$class C , class Iterator  = decltype(\+::std\+::declval$<$const C\&$>$().\+begin()), class  = decltype(\+::std\+::declval$<$const C\&$>$().\+end()), class  = decltype(++\+::std\+::declval$<$\+Iterator\&$>$()), class  = decltype($\ast$\+::std\+::declval$<$\+Iterator$>$()), class  = typename C\+::const\+\_\+iterator$>$ }\\Is\+Container \hyperlink{namespacetesting_1_1internal_a764748b94f628bdd1dcd39dc81e8b71f}{testing\+::internal\+::\+Is\+Container\+Test} (int)
+\item 
+{\footnotesize template$<$class C $>$ }\\Is\+Not\+Container \hyperlink{namespacetesting_1_1internal_af545a2ae928b8a9e7581978234464275}{testing\+::internal\+::\+Is\+Container\+Test} (long)
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\bool \hyperlink{namespacetesting_1_1internal_af4bebf36baf0b0a5b26d051dde55fa47}{testing\+::internal\+::\+Array\+Eq} (const T $\ast$lhs, size\+\_\+t size, const U $\ast$rhs)
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\bool \hyperlink{namespacetesting_1_1internal_a49b4d0ee49c0f8c93bab29ebd20630cc}{testing\+::internal\+::\+Array\+Eq} (const T \&lhs, const U \&rhs)
+\item 
+{\footnotesize template$<$typename T , typename U , size\+\_\+t N$>$ }\\bool \hyperlink{namespacetesting_1_1internal_a5cb6f81ee827130024261121c742b26c}{testing\+::internal\+::\+Array\+Eq} (const T(\&lhs)\mbox{[}N\mbox{]}, const U(\&rhs)\mbox{[}N\mbox{]})
+\item 
+{\footnotesize template$<$typename Iter , typename Element $>$ }\\Iter \hyperlink{namespacetesting_1_1internal_a94a857fe6ff32cf4fdc4769a4071f239}{testing\+::internal\+::\+Array\+Aware\+Find} (Iter begin, Iter end, const Element \&elem)
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\void \hyperlink{namespacetesting_1_1internal_afb1b9728aaaf6d9fe6246a19cfe3f7f5}{testing\+::internal\+::\+Copy\+Array} (const T $\ast$from, size\+\_\+t size, U $\ast$to)
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\void \hyperlink{namespacetesting_1_1internal_a84d0e746ba0827cc52b53d22000de0e8}{testing\+::internal\+::\+Copy\+Array} (const T \&from, U $\ast$to)
+\item 
+{\footnotesize template$<$typename T , typename U , size\+\_\+t N$>$ }\\void \hyperlink{namespacetesting_1_1internal_a1e7ae855686720615dcd5754c8181c62}{testing\+::internal\+::\+Copy\+Array} (const T(\&from)\mbox{[}N\mbox{]}, U($\ast$to)\mbox{[}N\mbox{]})
+\item 
+\hyperlink{namespacetesting_1_1internal_ac57c9bf3c92c207ba11b83ce05d0359a}{testing\+::internal\+::\+G\+T\+E\+S\+T\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+E\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+S\+E\+\_\+P is deprecated, please use \char`\"{} \char`\"{}\hyperlink{gtest-param-test_8h_a6a5cb3ce0a0fe17f84f357a6f39a4ba5}{I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+E\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+I\+T\+E\+\_\+P}\char`\"{}) const expr bool Instantiate\+Test\+Case\+\_\+\+P\+\_\+\+Is\+Deprecated()
+\item 
+\hyperlink{namespacetesting_1_1internal_ac2bac410cd8b9ecbc8f4ccc921e61cee}{testing\+::internal\+::\+G\+T\+E\+S\+T\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}T\+Y\+P\+E\+D\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+S\+E\+\_\+P is deprecated, please use \char`\"{} \char`\"{}T\+Y\+P\+E\+D\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+I\+T\+E\+\_\+P\char`\"{}) const expr bool Typed\+Test\+Case\+\_\+\+P\+\_\+\+Is\+Deprecated()
+\item 
+\hyperlink{namespacetesting_1_1internal_ac7c25a00ce37b8f6c7ea16814233b281}{testing\+::internal\+::\+G\+T\+E\+S\+T\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}T\+Y\+P\+E\+D\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE is deprecated, please use \char`\"{} \char`\"{}T\+Y\+P\+E\+D\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+I\+TE\char`\"{}) const expr bool Typed\+Test\+Case\+Is\+Deprecated()
+\item 
+\hyperlink{namespacetesting_1_1internal_ad10c37bd148fb8988a1d99e127891203}{testing\+::internal\+::\+G\+T\+E\+S\+T\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+P\+E\+D\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+S\+E\+\_\+P is deprecated, please use \char`\"{} \char`\"{}R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+Y\+P\+E\+D\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+I\+T\+E\+\_\+P\char`\"{}) const expr bool Register\+Typed\+Test\+Case\+\_\+\+P\+\_\+\+Is\+Deprecated()
+\item 
+\hyperlink{namespacetesting_1_1internal_ab9dabaaecfb36c469b3382a169a581db}{testing\+::internal\+::\+G\+T\+E\+S\+T\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+E\+\_\+\+T\+Y\+P\+E\+D\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+S\+E\+\_\+P is deprecated, please use \char`\"{} \char`\"{}I\+N\+S\+T\+A\+N\+T\+I\+A\+T\+E\+\_\+\+T\+Y\+P\+E\+D\+\_\+\+T\+E\+S\+T\+\_\+\+S\+U\+I\+T\+E\+\_\+P\char`\"{}) const expr bool Instantiate\+Typed\+Test\+Case\+\_\+\+P\+\_\+\+Is\+Deprecated()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{gtest-port_8h_aa73be6f0ba4a7456180a94904ce17790}{G\+T\+E\+S\+T\+\_\+\+A\+P\+I\+\_\+} const char \hyperlink{namespacetesting_1_1internal_a999c7ef9ff01b6d2d76669372c444aa3}{testing\+::internal\+::k\+Stack\+Trace\+Marker} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}\label{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+@{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+@{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+}{GTEST\_CONCAT\_TOKEN\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+(\begin{DoxyParamCaption}\item[{}]{foo,  }\item[{}]{bar }\end{DoxyParamCaption})~\hyperlink{gtest-internal_8h_aa39fb5346d3573feebe4257cb3a01fde}{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+I\+M\+P\+L\+\_\+}(foo, bar)}
+
+\mbox{\Hypertarget{gtest-internal_8h_aa39fb5346d3573feebe4257cb3a01fde}\label{gtest-internal_8h_aa39fb5346d3573feebe4257cb3a01fde}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+I\+M\+P\+L\+\_\+@{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+I\+M\+P\+L\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+I\+M\+P\+L\+\_\+@{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+I\+M\+P\+L\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+I\+M\+P\+L\+\_\+}{GTEST\_CONCAT\_TOKEN\_IMPL\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+C\+O\+N\+C\+A\+T\+\_\+\+T\+O\+K\+E\+N\+\_\+\+I\+M\+P\+L\+\_\+(\begin{DoxyParamCaption}\item[{}]{foo,  }\item[{}]{bar }\end{DoxyParamCaption})~foo \#\# bar}
+
+\mbox{\Hypertarget{gtest-internal_8h_a0f9a4c3ea82cc7bf4478eaffdc168358}\label{gtest-internal_8h_a0f9a4c3ea82cc7bf4478eaffdc168358}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}{GTEST\_FATAL\_FAILURE\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+(\begin{DoxyParamCaption}\item[{}]{message }\end{DoxyParamCaption})~return \hyperlink{gtest-internal_8h_a94c73d5368ec946bc354d0992ad00810}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}(message, \+::testing\+::\+Test\+Part\+Result\+::k\+Fatal\+Failure)}
+
+\mbox{\Hypertarget{gtest-internal_8h_a94c73d5368ec946bc354d0992ad00810}\label{gtest-internal_8h_a94c73d5368ec946bc354d0992ad00810}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}{GTEST\_MESSAGE\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+(\begin{DoxyParamCaption}\item[{}]{message,  }\item[{}]{result\+\_\+type }\end{DoxyParamCaption})~\hyperlink{gtest-internal_8h_a8d70025c45a47a493780746dfd66d565}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+T\+\_\+}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, message, result\+\_\+type)}
+
+\mbox{\Hypertarget{gtest-internal_8h_a8d70025c45a47a493780746dfd66d565}\label{gtest-internal_8h_a8d70025c45a47a493780746dfd66d565}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+T\+\_\+@{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+T\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+T\+\_\+@{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+T\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+T\+\_\+}{GTEST\_MESSAGE\_AT\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+\+A\+T\+\_\+(\begin{DoxyParamCaption}\item[{}]{file,  }\item[{}]{line,  }\item[{}]{message,  }\item[{}]{result\+\_\+type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{classtesting_1_1internal_1_1AssertHelper}{::testing::internal::AssertHelper}(result\_type, file, line, message) \(\backslash\)
+    = \hyperlink{classtesting_1_1Message}{::testing::Message}()
+\end{DoxyCode}
+\mbox{\Hypertarget{gtest-internal_8h_a6cb7482cfa03661a91c698eb5895f642}\label{gtest-internal_8h_a6cb7482cfa03661a91c698eb5895f642}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+N\+O\+N\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+N\+O\+N\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+N\+O\+N\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+N\+O\+N\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+N\+O\+N\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}{GTEST\_NONFATAL\_FAILURE\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+N\+O\+N\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+(\begin{DoxyParamCaption}\item[{}]{message }\end{DoxyParamCaption})~\hyperlink{gtest-internal_8h_a94c73d5368ec946bc354d0992ad00810}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}(message, \+::testing\+::\+Test\+Part\+Result\+::k\+Non\+Fatal\+Failure)}
+
+\mbox{\Hypertarget{gtest-internal_8h_a2ffec8c60510eb130af387f5ce9a756a}\label{gtest-internal_8h_a2ffec8c60510eb130af387f5ce9a756a}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+C\+O\+N\+S\+T\+\_\+@{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+C\+O\+N\+S\+T\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+C\+O\+N\+S\+T\+\_\+@{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+C\+O\+N\+S\+T\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+C\+O\+N\+S\+T\+\_\+}{GTEST\_REMOVE\_CONST\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+C\+O\+N\+S\+T\+\_\+(\begin{DoxyParamCaption}\item[{}]{T }\end{DoxyParamCaption})~typename \+::\hyperlink{structtesting_1_1internal_1_1RemoveConst}{testing\+::internal\+::\+Remove\+Const}$<$T$>$\+::type}
+
+\mbox{\Hypertarget{gtest-internal_8h_a84c72f25a6a6600e3ff8381ca6982ae9}\label{gtest-internal_8h_a84c72f25a6a6600e3ff8381ca6982ae9}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+}{GTEST\_REMOVE\_REFERENCE\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+(\begin{DoxyParamCaption}\item[{}]{T }\end{DoxyParamCaption})~typename \+::\hyperlink{structtesting_1_1internal_1_1RemoveReference}{testing\+::internal\+::\+Remove\+Reference}$<$T$>$\+::type}
+
+\mbox{\Hypertarget{gtest-internal_8h_a874567b176266188fabfffb8393267ce}\label{gtest-internal_8h_a874567b176266188fabfffb8393267ce}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+A\+N\+D\+\_\+\+C\+O\+N\+S\+T\+\_\+@{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+A\+N\+D\+\_\+\+C\+O\+N\+S\+T\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+A\+N\+D\+\_\+\+C\+O\+N\+S\+T\+\_\+@{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+A\+N\+D\+\_\+\+C\+O\+N\+S\+T\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+A\+N\+D\+\_\+\+C\+O\+N\+S\+T\+\_\+}{GTEST\_REMOVE\_REFERENCE\_AND\_CONST\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+A\+N\+D\+\_\+\+C\+O\+N\+S\+T\+\_\+(\begin{DoxyParamCaption}\item[{}]{T }\end{DoxyParamCaption})~\hyperlink{gtest-internal_8h_a2ffec8c60510eb130af387f5ce9a756a}{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+C\+O\+N\+S\+T\+\_\+}(\hyperlink{gtest-internal_8h_a84c72f25a6a6600e3ff8381ca6982ae9}{G\+T\+E\+S\+T\+\_\+\+R\+E\+M\+O\+V\+E\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+}(T))}
+
+\mbox{\Hypertarget{gtest-internal_8h_ab75ed7a6cd9e466944ce680c1c07ab47}\label{gtest-internal_8h_ab75ed7a6cd9e466944ce680c1c07ab47}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+S\+K\+I\+P\+\_\+@{G\+T\+E\+S\+T\+\_\+\+S\+K\+I\+P\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+S\+K\+I\+P\+\_\+@{G\+T\+E\+S\+T\+\_\+\+S\+K\+I\+P\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+S\+K\+I\+P\+\_\+}{GTEST\_SKIP\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+S\+K\+I\+P\+\_\+(\begin{DoxyParamCaption}\item[{}]{message }\end{DoxyParamCaption})~return \hyperlink{gtest-internal_8h_a94c73d5368ec946bc354d0992ad00810}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}(message, \+::testing\+::\+Test\+Part\+Result\+::k\+Skip)}
+
+\mbox{\Hypertarget{gtest-internal_8h_affa935d4361fa573644e9c739dde2b14}\label{gtest-internal_8h_affa935d4361fa573644e9c739dde2b14}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+S\+T\+R\+I\+N\+G\+I\+F\+Y\+\_\+@{G\+T\+E\+S\+T\+\_\+\+S\+T\+R\+I\+N\+G\+I\+F\+Y\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+S\+T\+R\+I\+N\+G\+I\+F\+Y\+\_\+@{G\+T\+E\+S\+T\+\_\+\+S\+T\+R\+I\+N\+G\+I\+F\+Y\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+S\+T\+R\+I\+N\+G\+I\+F\+Y\+\_\+}{GTEST\_STRINGIFY\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+S\+T\+R\+I\+N\+G\+I\+F\+Y\+\_\+(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})~\#name}
+
+\mbox{\Hypertarget{gtest-internal_8h_abe012b550eb3807e8c49f7e161bd1567}\label{gtest-internal_8h_abe012b550eb3807e8c49f7e161bd1567}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+@{G\+T\+E\+S\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+@{G\+T\+E\+S\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+}{GTEST\_SUCCESS\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+\_\+(\begin{DoxyParamCaption}\item[{}]{message }\end{DoxyParamCaption})~\hyperlink{gtest-internal_8h_a94c73d5368ec946bc354d0992ad00810}{G\+T\+E\+S\+T\+\_\+\+M\+E\+S\+S\+A\+G\+E\+\_\+}(message, \+::testing\+::\+Test\+Part\+Result\+::k\+Success)}
+
+\mbox{\Hypertarget{gtest-internal_8h_a2e66f7dfc5cb87e0fa0289f653173c69}\label{gtest-internal_8h_a2e66f7dfc5cb87e0fa0289f653173c69}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+S\+U\+P\+P\+R\+E\+S\+S\+\_\+\+U\+N\+R\+E\+A\+C\+H\+A\+B\+L\+E\+\_\+\+C\+O\+D\+E\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+B\+E\+L\+O\+W\+\_\+@{G\+T\+E\+S\+T\+\_\+\+S\+U\+P\+P\+R\+E\+S\+S\+\_\+\+U\+N\+R\+E\+A\+C\+H\+A\+B\+L\+E\+\_\+\+C\+O\+D\+E\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+B\+E\+L\+O\+W\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+S\+U\+P\+P\+R\+E\+S\+S\+\_\+\+U\+N\+R\+E\+A\+C\+H\+A\+B\+L\+E\+\_\+\+C\+O\+D\+E\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+B\+E\+L\+O\+W\+\_\+@{G\+T\+E\+S\+T\+\_\+\+S\+U\+P\+P\+R\+E\+S\+S\+\_\+\+U\+N\+R\+E\+A\+C\+H\+A\+B\+L\+E\+\_\+\+C\+O\+D\+E\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+B\+E\+L\+O\+W\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+S\+U\+P\+P\+R\+E\+S\+S\+\_\+\+U\+N\+R\+E\+A\+C\+H\+A\+B\+L\+E\+\_\+\+C\+O\+D\+E\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+B\+E\+L\+O\+W\+\_\+}{GTEST\_SUPPRESS\_UNREACHABLE\_CODE\_WARNING\_BELOW\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+S\+U\+P\+P\+R\+E\+S\+S\+\_\+\+U\+N\+R\+E\+A\+C\+H\+A\+B\+L\+E\+\_\+\+C\+O\+D\+E\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+B\+E\+L\+O\+W\+\_\+(\begin{DoxyParamCaption}\item[{}]{statement }\end{DoxyParamCaption})~if (\+::\hyperlink{namespacetesting_1_1internal_a4d46f09c3bfe68700b7f728d2cc3782f}{testing\+::internal\+::\+Always\+True}()) \{ statement; \}}
+
+\mbox{\Hypertarget{gtest-internal_8h_ab43103f7842de04474e362689f782a46}\label{gtest-internal_8h_ab43103f7842de04474e362689f782a46}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+}{GTEST\_TEST\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+(\begin{DoxyParamCaption}\item[{}]{test\+\_\+suite\+\_\+name,  }\item[{}]{test\+\_\+name,  }\item[{}]{parent\+\_\+class,  }\item[{}]{parent\+\_\+id }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{class }\hyperlink{gtest-internal_8h_ad4bc4ec847a06e7de981e81c9bb116cf}{GTEST\_TEST\_CLASS\_NAME\_}(test\_suite\_name, test\_name)                    \(\backslash\)
+      : \textcolor{keyword}{public} parent\_class \{                                                 \(\backslash\)
+   public:                                                                    \(\backslash\)
+    GTEST\_TEST\_CLASS\_NAME\_(test\_suite\_name, test\_name)() \{\}                   \(\backslash\)
+                                                                              \(\backslash\)
+   private:                                                                   \(\backslash\)
+    virtual \textcolor{keywordtype}{void} TestBody();                                                  \(\backslash\)
+    static ::testing::TestInfo* \textcolor{keyword}{const} test\_info\_ \hyperlink{gtest-port_8h_acdd47601a9376161c349a5881ccc6918}{GTEST\_ATTRIBUTE\_UNUSED\_};     \(\backslash\)
+    GTEST\_DISALLOW\_COPY\_AND\_ASSIGN\_(\hyperlink{gtest-internal_8h_ad4bc4ec847a06e7de981e81c9bb116cf}{GTEST\_TEST\_CLASS\_NAME\_}(test\_suite\_name,   \(\backslash\)
+                                                           test\_name));       \(\backslash\)
+  \};                                                                          \(\backslash\)
+                                                                              \(\backslash\)
+  \hyperlink{classtesting_1_1TestInfo}{::testing::TestInfo}* \textcolor{keyword}{const} \hyperlink{gtest-internal_8h_ad4bc4ec847a06e7de981e81c9bb116cf}{GTEST\_TEST\_CLASS\_NAME\_}(
+      test\_suite\_name,          \(\backslash\)
+                                                    test\_name)::test\_info\_ =  \(\backslash\)
+      ::\hyperlink{namespacetesting}{testing}::internal::\hyperlink{namespacetesting_1_1internal_a7ab4072540184e26119ad853f45059f7}{MakeAndRegisterTestInfo}(                          
+       \(\backslash\)
+          #test\_suite\_name, #test\_name, nullptr, nullptr,                     \(\backslash\)
+          ::\hyperlink{namespacetesting}{testing}::internal::CodeLocation(\_\_FILE\_\_, \_\_LINE\_\_), (parent\_id), \(\backslash\)
+          ::\hyperlink{namespacetesting}{testing}::internal::SuiteApiResolver<                              \(\backslash\)
+              parent\_class>::GetSetUpCaseOrSuite(\_\_FILE\_\_, \_\_LINE\_\_),         \(\backslash\)
+          ::\hyperlink{namespacetesting}{testing}::internal::SuiteApiResolver<                              \(\backslash\)
+              parent\_class>::GetTearDownCaseOrSuite(\_\_FILE\_\_, \_\_LINE\_\_),      \(\backslash\)
+          new ::\hyperlink{namespacetesting}{testing}::internal::TestFactoryImpl<GTEST\_TEST\_CLASS\_NAME\_(    \(\backslash\)
+              test\_suite\_name, test\_name)>);                                  \(\backslash\)
+  void \hyperlink{gtest-internal_8h_ad4bc4ec847a06e7de981e81c9bb116cf}{GTEST\_TEST\_CLASS\_NAME\_}(test\_suite\_name, test\_name)::TestBody()
+\end{DoxyCode}
+\mbox{\Hypertarget{gtest-internal_8h_af48bbd26d54d4afc5e4cef39b1c76ba3}\label{gtest-internal_8h_af48bbd26d54d4afc5e4cef39b1c76ba3}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+O\+W\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+O\+W\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+O\+W\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+O\+W\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+O\+W\+\_\+}{GTEST\_TEST\_ANY\_THROW\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+O\+W\+\_\+(\begin{DoxyParamCaption}\item[{}]{statement,  }\item[{}]{fail }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+GTEST\_AMBIGUOUS\_ELSE\_BLOCKER\_ \(\backslash\)
+  if (::\hyperlink{namespacetesting_1_1internal_a4d46f09c3bfe68700b7f728d2cc3782f}{testing::internal::AlwaysTrue}()) \{ \(\backslash\)
+    bool gtest\_caught\_any = \textcolor{keyword}{false}; \(\backslash\)
+    try \{ \(\backslash\)
+      GTEST\_SUPPRESS\_UNREACHABLE\_CODE\_WARNING\_BELOW\_(statement); \(\backslash\)
+    \} \(\backslash\)
+    catch (...) \{ \(\backslash\)
+      gtest\_caught\_any = \textcolor{keyword}{true}; \(\backslash\)
+    \} \(\backslash\)
+    if (!gtest\_caught\_any) \{ \(\backslash\)
+      goto \hyperlink{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}{GTEST\_CONCAT\_TOKEN\_}(gtest\_label\_testanythrow\_, \_\_LINE\_\_); \(\backslash\)
+    \} \(\backslash\)
+  \} \hyperlink{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}{else \(\backslash\)}
+\hyperlink{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}{    GTEST\_CONCAT\_TOKEN\_}(gtest\_label\_testanythrow\_, \_\_LINE\_\_): \(\backslash\)
+      fail(\textcolor{stringliteral}{"Expected: "} #statement \textcolor{stringliteral}{" throws an exception.\(\backslash\)n"} \(\backslash\)
+           \textcolor{stringliteral}{"  Actual: it doesn't."})
+\end{DoxyCode}
+\mbox{\Hypertarget{gtest-internal_8h_ae8912365e1d00a7a2bd248268c64aa1a}\label{gtest-internal_8h_ae8912365e1d00a7a2bd248268c64aa1a}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+B\+O\+O\+L\+E\+A\+N\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+B\+O\+O\+L\+E\+A\+N\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+B\+O\+O\+L\+E\+A\+N\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+B\+O\+O\+L\+E\+A\+N\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+B\+O\+O\+L\+E\+A\+N\+\_\+}{GTEST\_TEST\_BOOLEAN\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+B\+O\+O\+L\+E\+A\+N\+\_\+(\begin{DoxyParamCaption}\item[{}]{expression,  }\item[{}]{text,  }\item[{}]{actual,  }\item[{}]{expected,  }\item[{}]{fail }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+GTEST\_AMBIGUOUS\_ELSE\_BLOCKER\_ \(\backslash\)
+  if (const ::testing::AssertionResult gtest\_ar\_ = \(\backslash\)
+      ::testing::AssertionResult(expression)) \(\backslash\)
+    ; \(\backslash\)
+  else \(\backslash\)
+    fail(::\hyperlink{namespacetesting_1_1internal_aed8d3ad4341f8f2de53440e39c995632}{testing::internal::GetBoolAssertionFailureMessage}
+      (\(\backslash\)
+        gtest\_ar\_, text, #actual, #expected).c\_str())
+\end{DoxyCode}
+\mbox{\Hypertarget{gtest-internal_8h_ad4bc4ec847a06e7de981e81c9bb116cf}\label{gtest-internal_8h_ad4bc4ec847a06e7de981e81c9bb116cf}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+N\+A\+M\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+N\+A\+M\+E\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+N\+A\+M\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+N\+A\+M\+E\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+N\+A\+M\+E\+\_\+}{GTEST\_TEST\_CLASS\_NAME\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+C\+L\+A\+S\+S\+\_\+\+N\+A\+M\+E\+\_\+(\begin{DoxyParamCaption}\item[{}]{test\+\_\+suite\+\_\+name,  }\item[{}]{test\+\_\+name }\end{DoxyParamCaption})~test\+\_\+suite\+\_\+name\#\#\+\_\+\#\#test\+\_\+name\#\#\+\_\+\+Test}
+
+\mbox{\Hypertarget{gtest-internal_8h_a1b37a3c446836d33040f3266a6236081}\label{gtest-internal_8h_a1b37a3c446836d33040f3266a6236081}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+}{GTEST\_TEST\_NO\_FATAL\_FAILURE\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+F\+A\+T\+A\+L\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+(\begin{DoxyParamCaption}\item[{}]{statement,  }\item[{}]{fail }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+GTEST\_AMBIGUOUS\_ELSE\_BLOCKER\_ \(\backslash\)
+  if (::\hyperlink{namespacetesting_1_1internal_a4d46f09c3bfe68700b7f728d2cc3782f}{testing::internal::AlwaysTrue}()) \{ \(\backslash\)
+    ::testing::internal::HasNewFatalFailureHelper gtest\_fatal\_failure\_checker; \(\backslash\)
+    GTEST\_SUPPRESS\_UNREACHABLE\_CODE\_WARNING\_BELOW\_(statement); \(\backslash\)
+    if (gtest\_fatal\_failure\_checker.has\_new\_fatal\_failure()) \{ \(\backslash\)
+      goto \hyperlink{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}{GTEST\_CONCAT\_TOKEN\_}(gtest\_label\_testnofatal\_, \_\_LINE\_\_); \(\backslash\)
+    \} \(\backslash\)
+  \} \hyperlink{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}{else \(\backslash\)}
+\hyperlink{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}{    GTEST\_CONCAT\_TOKEN\_}(gtest\_label\_testnofatal\_, \_\_LINE\_\_): \(\backslash\)
+      fail(\textcolor{stringliteral}{"Expected: "} #statement \textcolor{stringliteral}{" doesn't generate new fatal "} \(\backslash\)
+           \textcolor{stringliteral}{"failures in the current thread.\(\backslash\)n"} \(\backslash\)
+           \textcolor{stringliteral}{"  Actual: it does."})
+\end{DoxyCode}
+\mbox{\Hypertarget{gtest-internal_8h_a9a109d026b5a904646437d7570e13581}\label{gtest-internal_8h_a9a109d026b5a904646437d7570e13581}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+}{GTEST\_TEST\_NO\_THROW\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+O\+W\+\_\+(\begin{DoxyParamCaption}\item[{}]{statement,  }\item[{}]{fail }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+GTEST\_AMBIGUOUS\_ELSE\_BLOCKER\_ \(\backslash\)
+  if (::\hyperlink{namespacetesting_1_1internal_a4d46f09c3bfe68700b7f728d2cc3782f}{testing::internal::AlwaysTrue}()) \{ \(\backslash\)
+    try \{ \(\backslash\)
+      GTEST\_SUPPRESS\_UNREACHABLE\_CODE\_WARNING\_BELOW\_(statement); \(\backslash\)
+    \} \(\backslash\)
+    catch (...) \{ \(\backslash\)
+      goto \hyperlink{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}{GTEST\_CONCAT\_TOKEN\_}(gtest\_label\_testnothrow\_, \_\_LINE\_\_); \(\backslash\)
+    \} \(\backslash\)
+  \} \hyperlink{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}{else \(\backslash\)}
+\hyperlink{gtest-internal_8h_ae3c336cbe1ae2bd1b1d019333e4428a0}{    GTEST\_CONCAT\_TOKEN\_}(gtest\_label\_testnothrow\_, \_\_LINE\_\_): \(\backslash\)
+      fail(\textcolor{stringliteral}{"Expected: "} #statement \textcolor{stringliteral}{" doesn't throw an exception.\(\backslash\)n"} \(\backslash\)
+           \textcolor{stringliteral}{"  Actual: it throws."})
+\end{DoxyCode}
+\mbox{\Hypertarget{gtest-internal_8h_a3f71db93eaf30b0cfca9612b9ac32106}\label{gtest-internal_8h_a3f71db93eaf30b0cfca9612b9ac32106}} 
+\index{gtest-\/internal.\+h@{gtest-\/internal.\+h}!G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+@{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+}!gtest-\/internal.\+h@{gtest-\/internal.\+h}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+}{GTEST\_TEST\_THROW\_}}
+{\footnotesize\ttfamily \#define G\+T\+E\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+(\begin{DoxyParamCaption}\item[{}]{statement,  }\item[{}]{expected\+\_\+exception,  }\item[{}]{fail }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+GTEST\_AMBIGUOUS\_ELSE\_BLOCKER\_ \(\backslash\)
+  if (::\hyperlink{structtesting_1_1internal_1_1ConstCharPtr}{testing::internal::ConstCharPtr} gtest\_msg = \textcolor{stringliteral}{""}) \{ \(\backslash\)
+    bool gtest\_caught\_expected = \textcolor{keyword}{false}; \(\backslash\)
+    try \{ \(\backslash\)
+      GTEST\_SUPPRESS\_UNREACHABLE\_CODE\_WARNING\_BELOW\_(statement); \(\backslash\)
+    \} \(\backslash\)
+    catch (expected\_exception \textcolor{keyword}{const}&) \{ \(\backslash\)
+      gtest\_caught\_expected = \textcolor{keyword}{true}; \(\backslash\)
+    \} \(\backslash\)
+    catch (...) \{ \(\backslash\)
+      gtest\_msg.value = \(\backslash\)
+          \textcolor{stringliteral}{"Expected: "} #statement \textcolor{stringliteral}{" throws an exception of type "} \(\backslash\)
+\textcolor{preprocessor}{          #expected\_exception ".\(\backslash\)n  Actual: it throws a different type."; \(\backslash\)}
+\textcolor{preprocessor}{      goto GTEST\_CONCAT\_TOKEN\_(gtest\_label\_testthrow\_, \_\_LINE\_\_); \(\backslash\)}
+\textcolor{preprocessor}{    \} \(\backslash\)}
+\textcolor{preprocessor}{    if (!gtest\_caught\_expected) \{ \(\backslash\)}
+\textcolor{preprocessor}{      gtest\_msg.value = \(\backslash\)}
+\textcolor{preprocessor}{          "Expected: " #statement " throws an exception of type " \(\backslash\)}
+\textcolor{preprocessor}{          #expected\_exception ".\(\backslash\)n  Actual: it throws nothing."; \(\backslash\)}
+\textcolor{preprocessor}{      goto GTEST\_CONCAT\_TOKEN\_(gtest\_label\_testthrow\_, \_\_LINE\_\_); \(\backslash\)}
+\textcolor{preprocessor}{    \} \(\backslash\)}
+\textcolor{preprocessor}{  \} else \(\backslash\)}
+\textcolor{preprocessor}{    GTEST\_CONCAT\_TOKEN\_(gtest\_label\_testthrow\_, \_\_LINE\_\_): \(\backslash\)}
+\textcolor{preprocessor}{      fail(gtest\_msg.value)}
+\end{DoxyCode}

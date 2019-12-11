@@ -1,0 +1,212 @@
+\hypertarget{classtesting_1_1TestEventListeners}{}\section{testing\+:\+:Test\+Event\+Listeners Class Reference}
+\label{classtesting_1_1TestEventListeners}\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+
+
+{\ttfamily \#include $<$gtest.\+h$>$}
+
+
+
+Collaboration diagram for testing\+:\+:Test\+Event\+Listeners\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classtesting_1_1TestEventListeners__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1TestEventListeners_af0716e4067a6f357ee5ea18802a591dd}{Test\+Event\+Listeners} ()
+\item 
+\hyperlink{classtesting_1_1TestEventListeners_abe9fbbbedf7f55fa898abfae60aa4913}{$\sim$\+Test\+Event\+Listeners} ()
+\item 
+void \hyperlink{classtesting_1_1TestEventListeners_a1207dce74d64c1c39ffa6105560536a0}{Append} (\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$listener)
+\item 
+\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$ \hyperlink{classtesting_1_1TestEventListeners_a5d4bfb7d8584801d6074bb0ec28f8bda}{Release} (\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$listener)
+\item 
+\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$ \hyperlink{classtesting_1_1TestEventListeners_a6293443acb5af942eeec638b6aa6dcf2}{default\+\_\+result\+\_\+printer} () const
+\item 
+\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$ \hyperlink{classtesting_1_1TestEventListeners_aa880de6ddfc3f5824371853c6846abbd}{default\+\_\+xml\+\_\+generator} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$ \hyperlink{classtesting_1_1TestEventListeners_a3de1e101514bdba3e74b93adc604e9c4}{repeater} ()
+\item 
+void \hyperlink{classtesting_1_1TestEventListeners_aeaab55da7c18c35fb12c27c18ff99955}{Set\+Default\+Result\+Printer} (\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$listener)
+\item 
+void \hyperlink{classtesting_1_1TestEventListeners_a36dbac47563ef8bb78cb467d11f5b4d9}{Set\+Default\+Xml\+Generator} (\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$listener)
+\item 
+bool \hyperlink{classtesting_1_1TestEventListeners_aa1878baf16a50f30f6435fad3c68ef3f}{Event\+Forwarding\+Enabled} () const
+\item 
+void \hyperlink{classtesting_1_1TestEventListeners_a7132550dc1c50bb3399a6d6d3fc9be3d}{Suppress\+Event\+Forwarding} ()
+\item 
+\hyperlink{classtesting_1_1TestEventListeners_a31d12292abc277dedbb7dc7748a6a60e}{G\+T\+E\+S\+T\+\_\+\+D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+} (\hyperlink{classtesting_1_1TestEventListeners}{Test\+Event\+Listeners})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+internal\+::\+Test\+Event\+Repeater $\ast$ \hyperlink{classtesting_1_1TestEventListeners_a625d58b951893e80cde12862aece6fd8}{repeater\+\_\+}
+\item 
+\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$ \hyperlink{classtesting_1_1TestEventListeners_a9ff9ebc31a9a52e5f108661cfcb7ecd9}{default\+\_\+result\+\_\+printer\+\_\+}
+\item 
+\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$ \hyperlink{classtesting_1_1TestEventListeners_a018a3952aa10c19251b88f27abe373d3}{default\+\_\+xml\+\_\+generator\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtesting_1_1TestEventListeners_ab9aaba231fd11196425e75caf709bfc6}{Test\+Suite}
+\item 
+class \hyperlink{classtesting_1_1TestEventListeners_a4c49c2cdb6c328e6b709b4542f23de3c}{Test\+Info}
+\item 
+class \hyperlink{classtesting_1_1TestEventListeners_abae39633da9932847b41cb80efd62115}{internal\+::\+Default\+Global\+Test\+Part\+Result\+Reporter}
+\item 
+class \hyperlink{classtesting_1_1TestEventListeners_afddba49fdf3f493532b4d5efb9814f4e}{internal\+::\+No\+Exec\+Death\+Test}
+\item 
+class \hyperlink{classtesting_1_1TestEventListeners_addbc107b6b445617c880182bd4f44cf9}{internal\+::\+Test\+Event\+Listeners\+Accessor}
+\item 
+class \hyperlink{classtesting_1_1TestEventListeners_acc0a5e7573fd6ae7ad1878613bb86853}{internal\+::\+Unit\+Test\+Impl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_af0716e4067a6f357ee5ea18802a591dd}\label{classtesting_1_1TestEventListeners_af0716e4067a6f357ee5ea18802a591dd}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!Test\+Event\+Listeners@{Test\+Event\+Listeners}}
+\index{Test\+Event\+Listeners@{Test\+Event\+Listeners}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{Test\+Event\+Listeners()}{TestEventListeners()}}
+{\footnotesize\ttfamily testing\+::\+Test\+Event\+Listeners\+::\+Test\+Event\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_abe9fbbbedf7f55fa898abfae60aa4913}\label{classtesting_1_1TestEventListeners_abe9fbbbedf7f55fa898abfae60aa4913}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!````~Test\+Event\+Listeners@{$\sim$\+Test\+Event\+Listeners}}
+\index{````~Test\+Event\+Listeners@{$\sim$\+Test\+Event\+Listeners}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{$\sim$\+Test\+Event\+Listeners()}{~TestEventListeners()}}
+{\footnotesize\ttfamily testing\+::\+Test\+Event\+Listeners\+::$\sim$\+Test\+Event\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_a1207dce74d64c1c39ffa6105560536a0}\label{classtesting_1_1TestEventListeners_a1207dce74d64c1c39ffa6105560536a0}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!Append@{Append}}
+\index{Append@{Append}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{Append()}{Append()}}
+{\footnotesize\ttfamily void testing\+::\+Test\+Event\+Listeners\+::\+Append (\begin{DoxyParamCaption}\item[{\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$}]{listener }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_a6293443acb5af942eeec638b6aa6dcf2}\label{classtesting_1_1TestEventListeners_a6293443acb5af942eeec638b6aa6dcf2}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!default\+\_\+result\+\_\+printer@{default\+\_\+result\+\_\+printer}}
+\index{default\+\_\+result\+\_\+printer@{default\+\_\+result\+\_\+printer}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{default\+\_\+result\+\_\+printer()}{default\_result\_printer()}}
+{\footnotesize\ttfamily \hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener}$\ast$ testing\+::\+Test\+Event\+Listeners\+::default\+\_\+result\+\_\+printer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_aa880de6ddfc3f5824371853c6846abbd}\label{classtesting_1_1TestEventListeners_aa880de6ddfc3f5824371853c6846abbd}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!default\+\_\+xml\+\_\+generator@{default\+\_\+xml\+\_\+generator}}
+\index{default\+\_\+xml\+\_\+generator@{default\+\_\+xml\+\_\+generator}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{default\+\_\+xml\+\_\+generator()}{default\_xml\_generator()}}
+{\footnotesize\ttfamily \hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener}$\ast$ testing\+::\+Test\+Event\+Listeners\+::default\+\_\+xml\+\_\+generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_aa1878baf16a50f30f6435fad3c68ef3f}\label{classtesting_1_1TestEventListeners_aa1878baf16a50f30f6435fad3c68ef3f}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!Event\+Forwarding\+Enabled@{Event\+Forwarding\+Enabled}}
+\index{Event\+Forwarding\+Enabled@{Event\+Forwarding\+Enabled}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{Event\+Forwarding\+Enabled()}{EventForwardingEnabled()}}
+{\footnotesize\ttfamily bool testing\+::\+Test\+Event\+Listeners\+::\+Event\+Forwarding\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_a31d12292abc277dedbb7dc7748a6a60e}\label{classtesting_1_1TestEventListeners_a31d12292abc277dedbb7dc7748a6a60e}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!G\+T\+E\+S\+T\+\_\+\+D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+@{G\+T\+E\+S\+T\+\_\+\+D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+}}
+\index{G\+T\+E\+S\+T\+\_\+\+D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+@{G\+T\+E\+S\+T\+\_\+\+D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{G\+T\+E\+S\+T\+\_\+\+D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+()}{GTEST\_DISALLOW\_COPY\_AND\_ASSIGN\_()}}
+{\footnotesize\ttfamily testing\+::\+Test\+Event\+Listeners\+::\+G\+T\+E\+S\+T\+\_\+\+D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+ (\begin{DoxyParamCaption}\item[{\hyperlink{classtesting_1_1TestEventListeners}{Test\+Event\+Listeners}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_a5d4bfb7d8584801d6074bb0ec28f8bda}\label{classtesting_1_1TestEventListeners_a5d4bfb7d8584801d6074bb0ec28f8bda}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!Release@{Release}}
+\index{Release@{Release}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily \hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener}$\ast$ testing\+::\+Test\+Event\+Listeners\+::\+Release (\begin{DoxyParamCaption}\item[{\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$}]{listener }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_a3de1e101514bdba3e74b93adc604e9c4}\label{classtesting_1_1TestEventListeners_a3de1e101514bdba3e74b93adc604e9c4}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!repeater@{repeater}}
+\index{repeater@{repeater}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{repeater()}{repeater()}}
+{\footnotesize\ttfamily \hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener}$\ast$ testing\+::\+Test\+Event\+Listeners\+::repeater (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_aeaab55da7c18c35fb12c27c18ff99955}\label{classtesting_1_1TestEventListeners_aeaab55da7c18c35fb12c27c18ff99955}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!Set\+Default\+Result\+Printer@{Set\+Default\+Result\+Printer}}
+\index{Set\+Default\+Result\+Printer@{Set\+Default\+Result\+Printer}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{Set\+Default\+Result\+Printer()}{SetDefaultResultPrinter()}}
+{\footnotesize\ttfamily void testing\+::\+Test\+Event\+Listeners\+::\+Set\+Default\+Result\+Printer (\begin{DoxyParamCaption}\item[{\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_a36dbac47563ef8bb78cb467d11f5b4d9}\label{classtesting_1_1TestEventListeners_a36dbac47563ef8bb78cb467d11f5b4d9}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!Set\+Default\+Xml\+Generator@{Set\+Default\+Xml\+Generator}}
+\index{Set\+Default\+Xml\+Generator@{Set\+Default\+Xml\+Generator}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{Set\+Default\+Xml\+Generator()}{SetDefaultXmlGenerator()}}
+{\footnotesize\ttfamily void testing\+::\+Test\+Event\+Listeners\+::\+Set\+Default\+Xml\+Generator (\begin{DoxyParamCaption}\item[{\hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener} $\ast$}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_a7132550dc1c50bb3399a6d6d3fc9be3d}\label{classtesting_1_1TestEventListeners_a7132550dc1c50bb3399a6d6d3fc9be3d}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!Suppress\+Event\+Forwarding@{Suppress\+Event\+Forwarding}}
+\index{Suppress\+Event\+Forwarding@{Suppress\+Event\+Forwarding}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{Suppress\+Event\+Forwarding()}{SuppressEventForwarding()}}
+{\footnotesize\ttfamily void testing\+::\+Test\+Event\+Listeners\+::\+Suppress\+Event\+Forwarding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_abae39633da9932847b41cb80efd62115}\label{classtesting_1_1TestEventListeners_abae39633da9932847b41cb80efd62115}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!internal\+::\+Default\+Global\+Test\+Part\+Result\+Reporter@{internal\+::\+Default\+Global\+Test\+Part\+Result\+Reporter}}
+\index{internal\+::\+Default\+Global\+Test\+Part\+Result\+Reporter@{internal\+::\+Default\+Global\+Test\+Part\+Result\+Reporter}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{internal\+::\+Default\+Global\+Test\+Part\+Result\+Reporter}{internal::DefaultGlobalTestPartResultReporter}}
+{\footnotesize\ttfamily friend class internal\+::\+Default\+Global\+Test\+Part\+Result\+Reporter\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_afddba49fdf3f493532b4d5efb9814f4e}\label{classtesting_1_1TestEventListeners_afddba49fdf3f493532b4d5efb9814f4e}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!internal\+::\+No\+Exec\+Death\+Test@{internal\+::\+No\+Exec\+Death\+Test}}
+\index{internal\+::\+No\+Exec\+Death\+Test@{internal\+::\+No\+Exec\+Death\+Test}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{internal\+::\+No\+Exec\+Death\+Test}{internal::NoExecDeathTest}}
+{\footnotesize\ttfamily friend class internal\+::\+No\+Exec\+Death\+Test\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_addbc107b6b445617c880182bd4f44cf9}\label{classtesting_1_1TestEventListeners_addbc107b6b445617c880182bd4f44cf9}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!internal\+::\+Test\+Event\+Listeners\+Accessor@{internal\+::\+Test\+Event\+Listeners\+Accessor}}
+\index{internal\+::\+Test\+Event\+Listeners\+Accessor@{internal\+::\+Test\+Event\+Listeners\+Accessor}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{internal\+::\+Test\+Event\+Listeners\+Accessor}{internal::TestEventListenersAccessor}}
+{\footnotesize\ttfamily friend class internal\+::\+Test\+Event\+Listeners\+Accessor\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_acc0a5e7573fd6ae7ad1878613bb86853}\label{classtesting_1_1TestEventListeners_acc0a5e7573fd6ae7ad1878613bb86853}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!internal\+::\+Unit\+Test\+Impl@{internal\+::\+Unit\+Test\+Impl}}
+\index{internal\+::\+Unit\+Test\+Impl@{internal\+::\+Unit\+Test\+Impl}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{internal\+::\+Unit\+Test\+Impl}{internal::UnitTestImpl}}
+{\footnotesize\ttfamily friend class internal\+::\+Unit\+Test\+Impl\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_a4c49c2cdb6c328e6b709b4542f23de3c}\label{classtesting_1_1TestEventListeners_a4c49c2cdb6c328e6b709b4542f23de3c}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!Test\+Info@{Test\+Info}}
+\index{Test\+Info@{Test\+Info}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{Test\+Info}{TestInfo}}
+{\footnotesize\ttfamily friend class \hyperlink{classtesting_1_1TestInfo}{Test\+Info}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_ab9aaba231fd11196425e75caf709bfc6}\label{classtesting_1_1TestEventListeners_ab9aaba231fd11196425e75caf709bfc6}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!Test\+Suite@{Test\+Suite}}
+\index{Test\+Suite@{Test\+Suite}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{Test\+Suite}{TestSuite}}
+{\footnotesize\ttfamily friend class \hyperlink{classtesting_1_1TestSuite}{Test\+Suite}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_a9ff9ebc31a9a52e5f108661cfcb7ecd9}\label{classtesting_1_1TestEventListeners_a9ff9ebc31a9a52e5f108661cfcb7ecd9}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!default\+\_\+result\+\_\+printer\+\_\+@{default\+\_\+result\+\_\+printer\+\_\+}}
+\index{default\+\_\+result\+\_\+printer\+\_\+@{default\+\_\+result\+\_\+printer\+\_\+}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{default\+\_\+result\+\_\+printer\+\_\+}{default\_result\_printer\_}}
+{\footnotesize\ttfamily \hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener}$\ast$ testing\+::\+Test\+Event\+Listeners\+::default\+\_\+result\+\_\+printer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_a018a3952aa10c19251b88f27abe373d3}\label{classtesting_1_1TestEventListeners_a018a3952aa10c19251b88f27abe373d3}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!default\+\_\+xml\+\_\+generator\+\_\+@{default\+\_\+xml\+\_\+generator\+\_\+}}
+\index{default\+\_\+xml\+\_\+generator\+\_\+@{default\+\_\+xml\+\_\+generator\+\_\+}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{default\+\_\+xml\+\_\+generator\+\_\+}{default\_xml\_generator\_}}
+{\footnotesize\ttfamily \hyperlink{classtesting_1_1TestEventListener}{Test\+Event\+Listener}$\ast$ testing\+::\+Test\+Event\+Listeners\+::default\+\_\+xml\+\_\+generator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1TestEventListeners_a625d58b951893e80cde12862aece6fd8}\label{classtesting_1_1TestEventListeners_a625d58b951893e80cde12862aece6fd8}} 
+\index{testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}!repeater\+\_\+@{repeater\+\_\+}}
+\index{repeater\+\_\+@{repeater\+\_\+}!testing\+::\+Test\+Event\+Listeners@{testing\+::\+Test\+Event\+Listeners}}
+\subsubsection{\texorpdfstring{repeater\+\_\+}{repeater\_}}
+{\footnotesize\ttfamily internal\+::\+Test\+Event\+Repeater$\ast$ testing\+::\+Test\+Event\+Listeners\+::repeater\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tests/googletest/include/gtest/\hyperlink{gtest_8h}{gtest.\+h}\end{DoxyCompactItemize}

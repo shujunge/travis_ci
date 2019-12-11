@@ -1,0 +1,154 @@
+\hypertarget{classtesting_1_1internal_1_1RangeGenerator}{}\section{testing\+:\+:internal\+:\+:Range\+Generator$<$ T, IncrementT $>$ Class Template Reference}
+\label{classtesting_1_1internal_1_1RangeGenerator}\index{testing\+::internal\+::\+Range\+Generator$<$ T, Increment\+T $>$@{testing\+::internal\+::\+Range\+Generator$<$ T, Increment\+T $>$}}
+
+
+{\ttfamily \#include $<$gtest-\/param-\/util.\+h$>$}
+
+
+
+Inheritance diagram for testing\+:\+:internal\+:\+:Range\+Generator$<$ T, IncrementT $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classtesting_1_1internal_1_1RangeGenerator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+:\+:internal\+:\+:Range\+Generator$<$ T, IncrementT $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classtesting_1_1internal_1_1RangeGenerator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtesting_1_1internal_1_1RangeGenerator_1_1Iterator}{Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1internal_1_1RangeGenerator_a5b3b83223b9cada3569bcee729e0fdf3}{Range\+Generator} (T begin, T end, IncrementT step)
+\item 
+\hyperlink{classtesting_1_1internal_1_1RangeGenerator_a72f6e6f65f1dd3f86672f6ed47df74ef}{$\sim$\+Range\+Generator} () override
+\item 
+\hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface}$<$ T $>$ $\ast$ \hyperlink{classtesting_1_1internal_1_1RangeGenerator_a502913fbcf14e89d5765dfb44f3c1295}{Begin} () const override
+\item 
+\hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface}$<$ T $>$ $\ast$ \hyperlink{classtesting_1_1internal_1_1RangeGenerator_ac112ca69567b9c47bf14554e0473e1e2}{End} () const override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtesting_1_1internal_1_1RangeGenerator_a00ef0f268e44d48d129a52bf0f9f9539}{operator=} (const \hyperlink{classtesting_1_1internal_1_1RangeGenerator}{Range\+Generator} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classtesting_1_1internal_1_1RangeGenerator_af617ad3b3e40bef967f1055dc7ae8ae6}{Calculate\+End\+Index} (const T \&begin, const T \&end, const IncrementT \&step)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const T \hyperlink{classtesting_1_1internal_1_1RangeGenerator_af16307fd21766bcbb973d8b3335f1a3f}{begin\+\_\+}
+\item 
+const T \hyperlink{classtesting_1_1internal_1_1RangeGenerator_ac36eecbaf80b51a59d59a4a4fdf5b5db}{end\+\_\+}
+\item 
+const IncrementT \hyperlink{classtesting_1_1internal_1_1RangeGenerator_ae7f3c4b76d8610f030fdd12285ebd8fb}{step\+\_\+}
+\item 
+const int \hyperlink{classtesting_1_1internal_1_1RangeGenerator_a336878a1871133e49665df60ea944076}{end\+\_\+index\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1RangeGenerator_a5b3b83223b9cada3569bcee729e0fdf3}\label{classtesting_1_1internal_1_1RangeGenerator_a5b3b83223b9cada3569bcee729e0fdf3}} 
+\index{testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}!Range\+Generator@{Range\+Generator}}
+\index{Range\+Generator@{Range\+Generator}!testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}}
+\subsubsection{\texorpdfstring{Range\+Generator()}{RangeGenerator()}}
+{\footnotesize\ttfamily template$<$typename T , typename IncrementT $>$ \\
+\hyperlink{classtesting_1_1internal_1_1RangeGenerator}{testing\+::internal\+::\+Range\+Generator}$<$ T, IncrementT $>$\+::\hyperlink{classtesting_1_1internal_1_1RangeGenerator}{Range\+Generator} (\begin{DoxyParamCaption}\item[{T}]{begin,  }\item[{T}]{end,  }\item[{IncrementT}]{step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1RangeGenerator_a72f6e6f65f1dd3f86672f6ed47df74ef}\label{classtesting_1_1internal_1_1RangeGenerator_a72f6e6f65f1dd3f86672f6ed47df74ef}} 
+\index{testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}!````~Range\+Generator@{$\sim$\+Range\+Generator}}
+\index{````~Range\+Generator@{$\sim$\+Range\+Generator}!testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}}
+\subsubsection{\texorpdfstring{$\sim$\+Range\+Generator()}{~RangeGenerator()}}
+{\footnotesize\ttfamily template$<$typename T , typename IncrementT $>$ \\
+\hyperlink{classtesting_1_1internal_1_1RangeGenerator}{testing\+::internal\+::\+Range\+Generator}$<$ T, IncrementT $>$\+::$\sim$\hyperlink{classtesting_1_1internal_1_1RangeGenerator}{Range\+Generator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1RangeGenerator_a502913fbcf14e89d5765dfb44f3c1295}\label{classtesting_1_1internal_1_1RangeGenerator_a502913fbcf14e89d5765dfb44f3c1295}} 
+\index{testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}!Begin@{Begin}}
+\index{Begin@{Begin}!testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}}
+\subsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily template$<$typename T , typename IncrementT $>$ \\
+\hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface}$<$T$>$$\ast$ \hyperlink{classtesting_1_1internal_1_1RangeGenerator}{testing\+::internal\+::\+Range\+Generator}$<$ T, IncrementT $>$\+::Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classtesting_1_1internal_1_1ParamGeneratorInterface_ae1de83b16fe9a53c67778a026c6a9569}{testing\+::internal\+::\+Param\+Generator\+Interface$<$ T $>$}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1RangeGenerator_af617ad3b3e40bef967f1055dc7ae8ae6}\label{classtesting_1_1internal_1_1RangeGenerator_af617ad3b3e40bef967f1055dc7ae8ae6}} 
+\index{testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}!Calculate\+End\+Index@{Calculate\+End\+Index}}
+\index{Calculate\+End\+Index@{Calculate\+End\+Index}!testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}}
+\subsubsection{\texorpdfstring{Calculate\+End\+Index()}{CalculateEndIndex()}}
+{\footnotesize\ttfamily template$<$typename T , typename IncrementT $>$ \\
+static int \hyperlink{classtesting_1_1internal_1_1RangeGenerator}{testing\+::internal\+::\+Range\+Generator}$<$ T, IncrementT $>$\+::Calculate\+End\+Index (\begin{DoxyParamCaption}\item[{const T \&}]{begin,  }\item[{const T \&}]{end,  }\item[{const IncrementT \&}]{step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1RangeGenerator_ac112ca69567b9c47bf14554e0473e1e2}\label{classtesting_1_1internal_1_1RangeGenerator_ac112ca69567b9c47bf14554e0473e1e2}} 
+\index{testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}!End@{End}}
+\index{End@{End}!testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}}
+\subsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily template$<$typename T , typename IncrementT $>$ \\
+\hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface}$<$T$>$$\ast$ \hyperlink{classtesting_1_1internal_1_1RangeGenerator}{testing\+::internal\+::\+Range\+Generator}$<$ T, IncrementT $>$\+::End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classtesting_1_1internal_1_1ParamGeneratorInterface_afa7211b74990e11d3fc7ad4e7113da4f}{testing\+::internal\+::\+Param\+Generator\+Interface$<$ T $>$}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1RangeGenerator_a00ef0f268e44d48d129a52bf0f9f9539}\label{classtesting_1_1internal_1_1RangeGenerator_a00ef0f268e44d48d129a52bf0f9f9539}} 
+\index{testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}!operator=@{operator=}}
+\index{operator=@{operator=}!testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T , typename IncrementT $>$ \\
+void \hyperlink{classtesting_1_1internal_1_1RangeGenerator}{testing\+::internal\+::\+Range\+Generator}$<$ T, IncrementT $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classtesting_1_1internal_1_1RangeGenerator}{Range\+Generator}$<$ T, IncrementT $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1RangeGenerator_af16307fd21766bcbb973d8b3335f1a3f}\label{classtesting_1_1internal_1_1RangeGenerator_af16307fd21766bcbb973d8b3335f1a3f}} 
+\index{testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}!begin\+\_\+@{begin\+\_\+}}
+\index{begin\+\_\+@{begin\+\_\+}!testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}}
+\subsubsection{\texorpdfstring{begin\+\_\+}{begin\_}}
+{\footnotesize\ttfamily template$<$typename T , typename IncrementT $>$ \\
+const T \hyperlink{classtesting_1_1internal_1_1RangeGenerator}{testing\+::internal\+::\+Range\+Generator}$<$ T, IncrementT $>$\+::begin\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1RangeGenerator_ac36eecbaf80b51a59d59a4a4fdf5b5db}\label{classtesting_1_1internal_1_1RangeGenerator_ac36eecbaf80b51a59d59a4a4fdf5b5db}} 
+\index{testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}!end\+\_\+@{end\+\_\+}}
+\index{end\+\_\+@{end\+\_\+}!testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}}
+\subsubsection{\texorpdfstring{end\+\_\+}{end\_}}
+{\footnotesize\ttfamily template$<$typename T , typename IncrementT $>$ \\
+const T \hyperlink{classtesting_1_1internal_1_1RangeGenerator}{testing\+::internal\+::\+Range\+Generator}$<$ T, IncrementT $>$\+::end\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1RangeGenerator_a336878a1871133e49665df60ea944076}\label{classtesting_1_1internal_1_1RangeGenerator_a336878a1871133e49665df60ea944076}} 
+\index{testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}!end\+\_\+index\+\_\+@{end\+\_\+index\+\_\+}}
+\index{end\+\_\+index\+\_\+@{end\+\_\+index\+\_\+}!testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}}
+\subsubsection{\texorpdfstring{end\+\_\+index\+\_\+}{end\_index\_}}
+{\footnotesize\ttfamily template$<$typename T , typename IncrementT $>$ \\
+const int \hyperlink{classtesting_1_1internal_1_1RangeGenerator}{testing\+::internal\+::\+Range\+Generator}$<$ T, IncrementT $>$\+::end\+\_\+index\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1RangeGenerator_ae7f3c4b76d8610f030fdd12285ebd8fb}\label{classtesting_1_1internal_1_1RangeGenerator_ae7f3c4b76d8610f030fdd12285ebd8fb}} 
+\index{testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}!step\+\_\+@{step\+\_\+}}
+\index{step\+\_\+@{step\+\_\+}!testing\+::internal\+::\+Range\+Generator@{testing\+::internal\+::\+Range\+Generator}}
+\subsubsection{\texorpdfstring{step\+\_\+}{step\_}}
+{\footnotesize\ttfamily template$<$typename T , typename IncrementT $>$ \\
+const IncrementT \hyperlink{classtesting_1_1internal_1_1RangeGenerator}{testing\+::internal\+::\+Range\+Generator}$<$ T, IncrementT $>$\+::step\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tests/googletest/include/gtest/internal/\hyperlink{gtest-param-util_8h}{gtest-\/param-\/util.\+h}\end{DoxyCompactItemize}

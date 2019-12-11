@@ -1,0 +1,272 @@
+\hypertarget{classtesting_1_1internal_1_1FloatingPoint}{}\section{testing\+:\+:internal\+:\+:Floating\+Point$<$ Raw\+Type $>$ Class Template Reference}
+\label{classtesting_1_1internal_1_1FloatingPoint}\index{testing\+::internal\+::\+Floating\+Point$<$ Raw\+Type $>$@{testing\+::internal\+::\+Floating\+Point$<$ Raw\+Type $>$}}
+
+
+{\ttfamily \#include $<$gtest-\/internal.\+h$>$}
+
+
+
+Collaboration diagram for testing\+:\+:internal\+:\+:Floating\+Point$<$ Raw\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classtesting_1_1internal_1_1FloatingPoint__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{uniontesting_1_1internal_1_1FloatingPoint_1_1FloatingPointUnion}{Floating\+Point\+Union}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classtesting_1_1internal_1_1TypeWithSize}{Type\+With\+Size}$<$ sizeof(Raw\+Type)$>$\+::U\+Int \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1internal_1_1FloatingPoint_a0dabf840863e0df84046f171c891fe71}{Floating\+Point} (const Raw\+Type \&x)
+\item 
+const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \& \hyperlink{classtesting_1_1internal_1_1FloatingPoint_aab053be914bdc9e507c0db89740c318c}{bits} () const
+\item 
+\hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint_af6bf8fab8df572ecb137a3516ff390ae}{exponent\+\_\+bits} () const
+\item 
+\hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint_aa17337e50a2ac855719bc0676529558f}{fraction\+\_\+bits} () const
+\item 
+\hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint_afb8a816bb598225d775caaf43a893ef0}{sign\+\_\+bit} () const
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a1fc654fd206efa98e480aa1e034f30d5}{is\+\_\+nan} () const
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a965214c1af2f9ac5adb1393794aa81e5}{Almost\+Equals} (const \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{Floating\+Point} \&rhs) const
+\item 
+{\footnotesize template$<$$>$ }\\float \hyperlink{classtesting_1_1internal_1_1FloatingPoint_af2eda9331e679229a1baa3404b57b51d}{Max} ()
+\item 
+{\footnotesize template$<$$>$ }\\double \hyperlink{classtesting_1_1internal_1_1FloatingPoint_afc2e85c0e886cb13b2300e961c9a9648}{Max} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Raw\+Type \hyperlink{classtesting_1_1internal_1_1FloatingPoint_ac551f793522e54fbd8a25acb79eac5b1}{Reinterpret\+Bits} (const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint_aab053be914bdc9e507c0db89740c318c}{bits})
+\item 
+static Raw\+Type \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a460027cc19cf01ae8e09cc3796b2b575}{Infinity} ()
+\item 
+static Raw\+Type \hyperlink{classtesting_1_1internal_1_1FloatingPoint_aae5954d8a57d3ff0987c6930cb68e114}{Max} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \hyperlink{classtesting_1_1internal_1_1FloatingPoint_ab819d2e8f93e9e482373999f0f8d71b9}{k\+Bit\+Count} = 8$\ast$sizeof(Raw\+Type)
+\item 
+static const size\+\_\+t \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a0b756a6d2a4f5f5b41ca79651c06c043}{k\+Fraction\+Bit\+Count}
+\item 
+static const size\+\_\+t \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a1973d843c00781053d3073daa8a40119}{k\+Exponent\+Bit\+Count} = \hyperlink{classtesting_1_1internal_1_1FloatingPoint_ab819d2e8f93e9e482373999f0f8d71b9}{k\+Bit\+Count} -\/ 1 -\/ \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a0b756a6d2a4f5f5b41ca79651c06c043}{k\+Fraction\+Bit\+Count}
+\item 
+static const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint_aca98b5ea6f2222a66a82e52421682efa}{k\+Sign\+Bit\+Mask} = static\+\_\+cast$<$\hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits}$>$(1) $<$$<$ (\hyperlink{classtesting_1_1internal_1_1FloatingPoint_ab819d2e8f93e9e482373999f0f8d71b9}{k\+Bit\+Count} -\/ 1)
+\item 
+static const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a0ac75d4ffd24f14bca452abe8a718da1}{k\+Fraction\+Bit\+Mask}
+\item 
+static const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a66065dfc4d5f41100f686159637af23b}{k\+Exponent\+Bit\+Mask} = $\sim$(\hyperlink{classtesting_1_1internal_1_1FloatingPoint_aca98b5ea6f2222a66a82e52421682efa}{k\+Sign\+Bit\+Mask} $\vert$ \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a0ac75d4ffd24f14bca452abe8a718da1}{k\+Fraction\+Bit\+Mask})
+\item 
+static const size\+\_\+t \hyperlink{classtesting_1_1internal_1_1FloatingPoint_aac498b3714d93f8e88cdc30e4c5935f6}{k\+Max\+Ulps} = 4
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a2cf0e39c6ebf026bc0353100d031ca85}{Sign\+And\+Magnitude\+To\+Biased} (const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \&sam)
+\item 
+static \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint_afe00f9f26ad2929a061f7e07b8a5071a}{Distance\+Between\+Sign\+And\+Magnitude\+Numbers} (const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \&sam1, const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \&sam2)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{uniontesting_1_1internal_1_1FloatingPoint_1_1FloatingPointUnion}{Floating\+Point\+Union} \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a2e0b6bd427248b91476f3fca281f7104}{u\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}\label{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!Bits@{Bits}}
+\index{Bits@{Bits}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{Bits}{Bits}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+typedef \hyperlink{classtesting_1_1internal_1_1TypeWithSize}{Type\+With\+Size}$<$sizeof(Raw\+Type)$>$\+::U\+Int \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::\hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_a0dabf840863e0df84046f171c891fe71}\label{classtesting_1_1internal_1_1FloatingPoint_a0dabf840863e0df84046f171c891fe71}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!Floating\+Point@{Floating\+Point}}
+\index{Floating\+Point@{Floating\+Point}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{Floating\+Point()}{FloatingPoint()}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+\hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::\hyperlink{classtesting_1_1internal_1_1FloatingPoint}{Floating\+Point} (\begin{DoxyParamCaption}\item[{const Raw\+Type \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_a965214c1af2f9ac5adb1393794aa81e5}\label{classtesting_1_1internal_1_1FloatingPoint_a965214c1af2f9ac5adb1393794aa81e5}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!Almost\+Equals@{Almost\+Equals}}
+\index{Almost\+Equals@{Almost\+Equals}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{Almost\+Equals()}{AlmostEquals()}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+bool \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::Almost\+Equals (\begin{DoxyParamCaption}\item[{const \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{Floating\+Point}$<$ Raw\+Type $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_aab053be914bdc9e507c0db89740c318c}\label{classtesting_1_1internal_1_1FloatingPoint_aab053be914bdc9e507c0db89740c318c}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!bits@{bits}}
+\index{bits@{bits}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{bits()}{bits()}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits}\& \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_afe00f9f26ad2929a061f7e07b8a5071a}\label{classtesting_1_1internal_1_1FloatingPoint_afe00f9f26ad2929a061f7e07b8a5071a}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!Distance\+Between\+Sign\+And\+Magnitude\+Numbers@{Distance\+Between\+Sign\+And\+Magnitude\+Numbers}}
+\index{Distance\+Between\+Sign\+And\+Magnitude\+Numbers@{Distance\+Between\+Sign\+And\+Magnitude\+Numbers}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{Distance\+Between\+Sign\+And\+Magnitude\+Numbers()}{DistanceBetweenSignAndMagnitudeNumbers()}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+static \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::Distance\+Between\+Sign\+And\+Magnitude\+Numbers (\begin{DoxyParamCaption}\item[{const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \&}]{sam1,  }\item[{const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \&}]{sam2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_af6bf8fab8df572ecb137a3516ff390ae}\label{classtesting_1_1internal_1_1FloatingPoint_af6bf8fab8df572ecb137a3516ff390ae}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!exponent\+\_\+bits@{exponent\+\_\+bits}}
+\index{exponent\+\_\+bits@{exponent\+\_\+bits}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{exponent\+\_\+bits()}{exponent\_bits()}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+\hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::exponent\+\_\+bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_aa17337e50a2ac855719bc0676529558f}\label{classtesting_1_1internal_1_1FloatingPoint_aa17337e50a2ac855719bc0676529558f}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!fraction\+\_\+bits@{fraction\+\_\+bits}}
+\index{fraction\+\_\+bits@{fraction\+\_\+bits}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{fraction\+\_\+bits()}{fraction\_bits()}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+\hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::fraction\+\_\+bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_a460027cc19cf01ae8e09cc3796b2b575}\label{classtesting_1_1internal_1_1FloatingPoint_a460027cc19cf01ae8e09cc3796b2b575}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!Infinity@{Infinity}}
+\index{Infinity@{Infinity}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{Infinity()}{Infinity()}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+static Raw\+Type \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::Infinity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_a1fc654fd206efa98e480aa1e034f30d5}\label{classtesting_1_1internal_1_1FloatingPoint_a1fc654fd206efa98e480aa1e034f30d5}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!is\+\_\+nan@{is\+\_\+nan}}
+\index{is\+\_\+nan@{is\+\_\+nan}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{is\+\_\+nan()}{is\_nan()}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+bool \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::is\+\_\+nan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_aae5954d8a57d3ff0987c6930cb68e114}\label{classtesting_1_1internal_1_1FloatingPoint_aae5954d8a57d3ff0987c6930cb68e114}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!Max@{Max}}
+\index{Max@{Max}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+static Raw\+Type \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_af2eda9331e679229a1baa3404b57b51d}\label{classtesting_1_1internal_1_1FloatingPoint_af2eda9331e679229a1baa3404b57b51d}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!Max@{Max}}
+\index{Max@{Max}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$$>$ \\
+float \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ float $>$\+::Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_afc2e85c0e886cb13b2300e961c9a9648}\label{classtesting_1_1internal_1_1FloatingPoint_afc2e85c0e886cb13b2300e961c9a9648}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!Max@{Max}}
+\index{Max@{Max}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$$>$ \\
+double \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ double $>$\+::Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_ac551f793522e54fbd8a25acb79eac5b1}\label{classtesting_1_1internal_1_1FloatingPoint_ac551f793522e54fbd8a25acb79eac5b1}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!Reinterpret\+Bits@{Reinterpret\+Bits}}
+\index{Reinterpret\+Bits@{Reinterpret\+Bits}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{Reinterpret\+Bits()}{ReinterpretBits()}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+static Raw\+Type \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::Reinterpret\+Bits (\begin{DoxyParamCaption}\item[{const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits}}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_afb8a816bb598225d775caaf43a893ef0}\label{classtesting_1_1internal_1_1FloatingPoint_afb8a816bb598225d775caaf43a893ef0}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!sign\+\_\+bit@{sign\+\_\+bit}}
+\index{sign\+\_\+bit@{sign\+\_\+bit}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{sign\+\_\+bit()}{sign\_bit()}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+\hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::sign\+\_\+bit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_a2cf0e39c6ebf026bc0353100d031ca85}\label{classtesting_1_1internal_1_1FloatingPoint_a2cf0e39c6ebf026bc0353100d031ca85}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!Sign\+And\+Magnitude\+To\+Biased@{Sign\+And\+Magnitude\+To\+Biased}}
+\index{Sign\+And\+Magnitude\+To\+Biased@{Sign\+And\+Magnitude\+To\+Biased}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{Sign\+And\+Magnitude\+To\+Biased()}{SignAndMagnitudeToBiased()}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+static \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::Sign\+And\+Magnitude\+To\+Biased (\begin{DoxyParamCaption}\item[{const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \&}]{sam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_ab819d2e8f93e9e482373999f0f8d71b9}\label{classtesting_1_1internal_1_1FloatingPoint_ab819d2e8f93e9e482373999f0f8d71b9}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!k\+Bit\+Count@{k\+Bit\+Count}}
+\index{k\+Bit\+Count@{k\+Bit\+Count}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{k\+Bit\+Count}{kBitCount}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+const size\+\_\+t \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::k\+Bit\+Count = 8$\ast$sizeof(Raw\+Type)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_a1973d843c00781053d3073daa8a40119}\label{classtesting_1_1internal_1_1FloatingPoint_a1973d843c00781053d3073daa8a40119}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!k\+Exponent\+Bit\+Count@{k\+Exponent\+Bit\+Count}}
+\index{k\+Exponent\+Bit\+Count@{k\+Exponent\+Bit\+Count}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{k\+Exponent\+Bit\+Count}{kExponentBitCount}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+const size\+\_\+t \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::k\+Exponent\+Bit\+Count = \hyperlink{classtesting_1_1internal_1_1FloatingPoint_ab819d2e8f93e9e482373999f0f8d71b9}{k\+Bit\+Count} -\/ 1 -\/ \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a0b756a6d2a4f5f5b41ca79651c06c043}{k\+Fraction\+Bit\+Count}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_a66065dfc4d5f41100f686159637af23b}\label{classtesting_1_1internal_1_1FloatingPoint_a66065dfc4d5f41100f686159637af23b}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!k\+Exponent\+Bit\+Mask@{k\+Exponent\+Bit\+Mask}}
+\index{k\+Exponent\+Bit\+Mask@{k\+Exponent\+Bit\+Mask}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{k\+Exponent\+Bit\+Mask}{kExponentBitMask}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::k\+Exponent\+Bit\+Mask = $\sim$(\hyperlink{classtesting_1_1internal_1_1FloatingPoint_aca98b5ea6f2222a66a82e52421682efa}{k\+Sign\+Bit\+Mask} $\vert$ \hyperlink{classtesting_1_1internal_1_1FloatingPoint_a0ac75d4ffd24f14bca452abe8a718da1}{k\+Fraction\+Bit\+Mask})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_a0b756a6d2a4f5f5b41ca79651c06c043}\label{classtesting_1_1internal_1_1FloatingPoint_a0b756a6d2a4f5f5b41ca79651c06c043}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!k\+Fraction\+Bit\+Count@{k\+Fraction\+Bit\+Count}}
+\index{k\+Fraction\+Bit\+Count@{k\+Fraction\+Bit\+Count}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{k\+Fraction\+Bit\+Count}{kFractionBitCount}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+const size\+\_\+t \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::k\+Fraction\+Bit\+Count\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    std::numeric\_limits<RawType>::digits - 1
+\end{DoxyCode}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_a0ac75d4ffd24f14bca452abe8a718da1}\label{classtesting_1_1internal_1_1FloatingPoint_a0ac75d4ffd24f14bca452abe8a718da1}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!k\+Fraction\+Bit\+Mask@{k\+Fraction\+Bit\+Mask}}
+\index{k\+Fraction\+Bit\+Mask@{k\+Fraction\+Bit\+Mask}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{k\+Fraction\+Bit\+Mask}{kFractionBitMask}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::k\+Fraction\+Bit\+Mask\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    ~static\_cast<\hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits}>(0) >> (\hyperlink{classtesting_1_1internal_1_1FloatingPoint_a1973d843c00781053d3073daa8a40119}{kExponentBitCount} + 1)
+\end{DoxyCode}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_aac498b3714d93f8e88cdc30e4c5935f6}\label{classtesting_1_1internal_1_1FloatingPoint_aac498b3714d93f8e88cdc30e4c5935f6}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!k\+Max\+Ulps@{k\+Max\+Ulps}}
+\index{k\+Max\+Ulps@{k\+Max\+Ulps}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{k\+Max\+Ulps}{kMaxUlps}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+const size\+\_\+t \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::k\+Max\+Ulps = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_aca98b5ea6f2222a66a82e52421682efa}\label{classtesting_1_1internal_1_1FloatingPoint_aca98b5ea6f2222a66a82e52421682efa}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!k\+Sign\+Bit\+Mask@{k\+Sign\+Bit\+Mask}}
+\index{k\+Sign\+Bit\+Mask@{k\+Sign\+Bit\+Mask}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{k\+Sign\+Bit\+Mask}{kSignBitMask}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+const \hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits} \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::k\+Sign\+Bit\+Mask = static\+\_\+cast$<$\hyperlink{classtesting_1_1internal_1_1FloatingPoint_abf228bf6cd48f12c8b44c85b4971a731}{Bits}$>$(1) $<$$<$ (\hyperlink{classtesting_1_1internal_1_1FloatingPoint_ab819d2e8f93e9e482373999f0f8d71b9}{k\+Bit\+Count} -\/ 1)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1FloatingPoint_a2e0b6bd427248b91476f3fca281f7104}\label{classtesting_1_1internal_1_1FloatingPoint_a2e0b6bd427248b91476f3fca281f7104}} 
+\index{testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}!u\+\_\+@{u\+\_\+}}
+\index{u\+\_\+@{u\+\_\+}!testing\+::internal\+::\+Floating\+Point@{testing\+::internal\+::\+Floating\+Point}}
+\subsubsection{\texorpdfstring{u\+\_\+}{u\_}}
+{\footnotesize\ttfamily template$<$typename Raw\+Type$>$ \\
+\hyperlink{uniontesting_1_1internal_1_1FloatingPoint_1_1FloatingPointUnion}{Floating\+Point\+Union} \hyperlink{classtesting_1_1internal_1_1FloatingPoint}{testing\+::internal\+::\+Floating\+Point}$<$ Raw\+Type $>$\+::u\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tests/googletest/include/gtest/internal/\hyperlink{gtest-internal_8h}{gtest-\/internal.\+h}\end{DoxyCompactItemize}

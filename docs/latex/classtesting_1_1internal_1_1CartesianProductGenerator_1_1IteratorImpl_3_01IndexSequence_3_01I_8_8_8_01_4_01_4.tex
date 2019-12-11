@@ -1,0 +1,210 @@
+\hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4}{}\section{testing\+:\+:internal\+:\+:Cartesian\+Product\+Generator$<$ T $>$\+:\+:Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$ Class Template Reference}
+\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4}\index{testing\+::internal\+::\+Cartesian\+Product\+Generator$<$ T $>$\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator$<$ T $>$\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+
+
+Inheritance diagram for testing\+:\+:internal\+:\+:Cartesian\+Product\+Generator$<$ T $>$\+:\+:Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for testing\+:\+:internal\+:\+:Cartesian\+Product\+Generator$<$ T $>$\+:\+:Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a3c28d20b4527f146a97c5490326f869f}{Iterator\+Impl} (const \hyperlink{classtesting_1_1internal_1_1ParamGeneratorInterface}{Param\+Generator\+Interface}$<$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type} $>$ $\ast$base, const std\+::tuple$<$ \hyperlink{classtesting_1_1internal_1_1ParamGenerator}{Param\+Generator}$<$ T $>$... $>$ \&generators, bool is\+\_\+end)
+\item 
+\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_adf6a47392283d7e236b604f487cf8cfc}{$\sim$\+Iterator\+Impl} () override
+\item 
+const \hyperlink{classtesting_1_1internal_1_1ParamGeneratorInterface}{Param\+Generator\+Interface}$<$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type} $>$ $\ast$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a8fa3ea322a1348fc8065481aba76e860}{Base\+Generator} () const override
+\item 
+void \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a167e8b38118c8635d5849daf924a517b}{Advance} () override
+\item 
+\hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface}$<$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type} $>$ $\ast$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a0b434e09b32dfd6b444085cf95dc22ab}{Clone} () const override
+\item 
+const \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type} $\ast$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_ab7052f320ab8ff3113a3e744a1bff07e}{Current} () const override
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a7ba6129ccd025c1cb0e00fe71b8c8489}{Equals} (const \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface}$<$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type} $>$ \&other) const override
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t ThisI$>$ }\\void \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a6a5fd8b4a0cd8e27c0ca1fbbfee4f997}{Advance\+If\+End} ()
+\item 
+void \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a0e6c088fed9a27254a657755d05bdcae}{Compute\+Current\+Value} ()
+\item 
+bool \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_abdf53ad1a435b992d399210178b35b70}{At\+End} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classtesting_1_1internal_1_1ParamGeneratorInterface}{Param\+Generator\+Interface}$<$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type} $>$ $\ast$const \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_ae434c3fd6b3fc5055960563a6d550376}{base\+\_\+}
+\item 
+std\+::tuple$<$ typename \hyperlink{classtesting_1_1internal_1_1ParamGenerator}{Param\+Generator}$<$ T $>$\+::iterator... $>$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_aae7fbddbf01df185226712ee2a38d410}{begin\+\_\+}
+\item 
+std\+::tuple$<$ typename \hyperlink{classtesting_1_1internal_1_1ParamGenerator}{Param\+Generator}$<$ T $>$\+::iterator... $>$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_aae9ccfd177834224412f9ac194bd8b68}{end\+\_\+}
+\item 
+std\+::tuple$<$ typename \hyperlink{classtesting_1_1internal_1_1ParamGenerator}{Param\+Generator}$<$ T $>$\+::iterator... $>$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a0678508a97f8b218fb5af11915678abf}{current\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type} $>$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_ab7ce5ae5ae5dbdcca97e1824d77736b0}{current\+\_\+value\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a3c28d20b4527f146a97c5490326f869f}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a3c28d20b4527f146a97c5490326f869f}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!Iterator\+Impl@{Iterator\+Impl}}
+\index{Iterator\+Impl@{Iterator\+Impl}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{Iterator\+Impl()}{IteratorImpl()}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl} (\begin{DoxyParamCaption}\item[{const \hyperlink{classtesting_1_1internal_1_1ParamGeneratorInterface}{Param\+Generator\+Interface}$<$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type} $>$ $\ast$}]{base,  }\item[{const std\+::tuple$<$ \hyperlink{classtesting_1_1internal_1_1ParamGenerator}{Param\+Generator}$<$ T $>$... $>$ \&}]{generators,  }\item[{bool}]{is\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_adf6a47392283d7e236b604f487cf8cfc}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_adf6a47392283d7e236b604f487cf8cfc}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!````~Iterator\+Impl@{$\sim$\+Iterator\+Impl}}
+\index{````~Iterator\+Impl@{$\sim$\+Iterator\+Impl}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{$\sim$\+Iterator\+Impl()}{~IteratorImpl()}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::$\sim$\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a167e8b38118c8635d5849daf924a517b}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a167e8b38118c8635d5849daf924a517b}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!Advance@{Advance}}
+\index{Advance@{Advance}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{Advance()}{Advance()}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+void \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::Advance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface_a600dbd35fcb551463e379516a1abea48}{testing\+::internal\+::\+Param\+Iterator\+Interface$<$ Param\+Type $>$}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a6a5fd8b4a0cd8e27c0ca1fbbfee4f997}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a6a5fd8b4a0cd8e27c0ca1fbbfee4f997}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!Advance\+If\+End@{Advance\+If\+End}}
+\index{Advance\+If\+End@{Advance\+If\+End}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{Advance\+If\+End()}{AdvanceIfEnd()}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+template$<$size\+\_\+t ThisI$>$ \\
+void \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::Advance\+If\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_abdf53ad1a435b992d399210178b35b70}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_abdf53ad1a435b992d399210178b35b70}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!At\+End@{At\+End}}
+\index{At\+End@{At\+End}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{At\+End()}{AtEnd()}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+bool \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::At\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a8fa3ea322a1348fc8065481aba76e860}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a8fa3ea322a1348fc8065481aba76e860}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!Base\+Generator@{Base\+Generator}}
+\index{Base\+Generator@{Base\+Generator}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{Base\+Generator()}{BaseGenerator()}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+const \hyperlink{classtesting_1_1internal_1_1ParamGeneratorInterface}{Param\+Generator\+Interface}$<$\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type}$>$$\ast$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::Base\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface_a17500953df75ecda1ace46c08ff731e9}{testing\+::internal\+::\+Param\+Iterator\+Interface$<$ Param\+Type $>$}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a0b434e09b32dfd6b444085cf95dc22ab}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a0b434e09b32dfd6b444085cf95dc22ab}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!Clone@{Clone}}
+\index{Clone@{Clone}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+\hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface}$<$\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type}$>$$\ast$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface_a4998c23e27e2943d97546011aa35db80}{testing\+::internal\+::\+Param\+Iterator\+Interface$<$ Param\+Type $>$}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a0e6c088fed9a27254a657755d05bdcae}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a0e6c088fed9a27254a657755d05bdcae}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!Compute\+Current\+Value@{Compute\+Current\+Value}}
+\index{Compute\+Current\+Value@{Compute\+Current\+Value}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{Compute\+Current\+Value()}{ComputeCurrentValue()}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+void \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::Compute\+Current\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_ab7052f320ab8ff3113a3e744a1bff07e}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_ab7052f320ab8ff3113a3e744a1bff07e}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!Current@{Current}}
+\index{Current@{Current}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{Current()}{Current()}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+const \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type}$\ast$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface_adfff808576d929085679c315b255af7e}{testing\+::internal\+::\+Param\+Iterator\+Interface$<$ Param\+Type $>$}.
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a7ba6129ccd025c1cb0e00fe71b8c8489}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a7ba6129ccd025c1cb0e00fe71b8c8489}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!Equals@{Equals}}
+\index{Equals@{Equals}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+bool \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::Equals (\begin{DoxyParamCaption}\item[{const \hyperlink{classtesting_1_1internal_1_1ParamIteratorInterface}{Param\+Iterator\+Interface}$<$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type} $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_ae434c3fd6b3fc5055960563a6d550376}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_ae434c3fd6b3fc5055960563a6d550376}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!base\+\_\+@{base\+\_\+}}
+\index{base\+\_\+@{base\+\_\+}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{base\+\_\+}{base\_}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+const \hyperlink{classtesting_1_1internal_1_1ParamGeneratorInterface}{Param\+Generator\+Interface}$<$\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type}$>$$\ast$ const \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::base\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_aae7fbddbf01df185226712ee2a38d410}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_aae7fbddbf01df185226712ee2a38d410}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!begin\+\_\+@{begin\+\_\+}}
+\index{begin\+\_\+@{begin\+\_\+}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{begin\+\_\+}{begin\_}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+std\+::tuple$<$typename \hyperlink{classtesting_1_1internal_1_1ParamGenerator}{Param\+Generator}$<$T$>$\+::iterator...$>$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::begin\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a0678508a97f8b218fb5af11915678abf}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_a0678508a97f8b218fb5af11915678abf}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!current\+\_\+@{current\+\_\+}}
+\index{current\+\_\+@{current\+\_\+}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{current\+\_\+}{current\_}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+std\+::tuple$<$typename \hyperlink{classtesting_1_1internal_1_1ParamGenerator}{Param\+Generator}$<$T$>$\+::iterator...$>$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::current\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_ab7ce5ae5ae5dbdcca97e1824d77736b0}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_ab7ce5ae5ae5dbdcca97e1824d77736b0}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!current\+\_\+value\+\_\+@{current\+\_\+value\+\_\+}}
+\index{current\+\_\+value\+\_\+@{current\+\_\+value\+\_\+}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{current\+\_\+value\+\_\+}{current\_value\_}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_af27131157a9347f0c82420ca081ee7dd}{Param\+Type}$>$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::current\+\_\+value\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_aae9ccfd177834224412f9ac194bd8b68}\label{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl_3_01IndexSequence_3_01I_8_8_8_01_4_01_4_aae9ccfd177834224412f9ac194bd8b68}} 
+\index{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}!end\+\_\+@{end\+\_\+}}
+\index{end\+\_\+@{end\+\_\+}!testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$@{testing\+::internal\+::\+Cartesian\+Product\+Generator\+::\+Iterator\+Impl$<$ Index\+Sequence$<$ I... $>$ $>$}}
+\subsubsection{\texorpdfstring{end\+\_\+}{end\_}}
+{\footnotesize\ttfamily template$<$typename... T$>$ \\
+template$<$size\+\_\+t... I$>$ \\
+std\+::tuple$<$typename \hyperlink{classtesting_1_1internal_1_1ParamGenerator}{Param\+Generator}$<$T$>$\+::iterator...$>$ \hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator}{testing\+::internal\+::\+Cartesian\+Product\+Generator}$<$ T $>$\+::\hyperlink{classtesting_1_1internal_1_1CartesianProductGenerator_1_1IteratorImpl}{Iterator\+Impl}$<$ \hyperlink{structtesting_1_1internal_1_1IndexSequence}{Index\+Sequence}$<$ I... $>$ $>$\+::end\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tests/googletest/include/gtest/internal/\hyperlink{gtest-param-util_8h}{gtest-\/param-\/util.\+h}\end{DoxyCompactItemize}

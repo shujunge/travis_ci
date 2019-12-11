@@ -1,0 +1,71 @@
+\hypertarget{my__lib_8h}{}\section{srcs/my\+\_\+lib.h File Reference}
+\label{my__lib_8h}\index{srcs/my\+\_\+lib.\+h@{srcs/my\+\_\+lib.\+h}}
+{\ttfamily \#include $<$torch/script.\+h$>$}\newline
+{\ttfamily \#include $<$torch/torch.\+h$>$}\newline
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+{\ttfamily \#include $<$opencv2/imgproc/imgproc.\+hpp$>$}\newline
+{\ttfamily \#include $<$Eigen/\+Dense$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for my\+\_\+lib.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{my__lib_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{my__lib_8h_ad647fcf643d228fe44dda9105f494f2b}{my\+\_\+add} (int x, int y)
+\item 
+Mat \hyperlink{my__lib_8h_a76b0cd67a31e6d4b4b17bcb36e2d7c22}{tensor\+To\+Mat} (const at\+::\+Tensor \&one\+\_\+heat\+\_\+map)
+\item 
+void \hyperlink{my__lib_8h_a541a6788713305b3d96c24017edf030c}{tensor2\+Mat} (at\+::\+Tensor \&t, Mat \&image)
+\item 
+at\+::\+Tensor \hyperlink{my__lib_8h_a988ee6b828236396014bb66a211c87c5}{Mat\+To\+Tensor} (string path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{my__lib_8h_a988ee6b828236396014bb66a211c87c5}\label{my__lib_8h_a988ee6b828236396014bb66a211c87c5}} 
+\index{my\+\_\+lib.\+h@{my\+\_\+lib.\+h}!Mat\+To\+Tensor@{Mat\+To\+Tensor}}
+\index{Mat\+To\+Tensor@{Mat\+To\+Tensor}!my\+\_\+lib.\+h@{my\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{Mat\+To\+Tensor()}{MatToTensor()}}
+{\footnotesize\ttfamily at\+::\+Tensor Mat\+To\+Tensor (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{my__lib_8h_ad647fcf643d228fe44dda9105f494f2b}\label{my__lib_8h_ad647fcf643d228fe44dda9105f494f2b}} 
+\index{my\+\_\+lib.\+h@{my\+\_\+lib.\+h}!my\+\_\+add@{my\+\_\+add}}
+\index{my\+\_\+add@{my\+\_\+add}!my\+\_\+lib.\+h@{my\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{my\+\_\+add()}{my\_add()}}
+{\footnotesize\ttfamily int my\+\_\+add (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{my__lib_8h_a541a6788713305b3d96c24017edf030c}\label{my__lib_8h_a541a6788713305b3d96c24017edf030c}} 
+\index{my\+\_\+lib.\+h@{my\+\_\+lib.\+h}!tensor2\+Mat@{tensor2\+Mat}}
+\index{tensor2\+Mat@{tensor2\+Mat}!my\+\_\+lib.\+h@{my\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{tensor2\+Mat()}{tensor2Mat()}}
+{\footnotesize\ttfamily void tensor2\+Mat (\begin{DoxyParamCaption}\item[{at\+::\+Tensor \&}]{t,  }\item[{Mat \&}]{image }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \+: at\+::tensor (H,W) float32 \\
+\hline
+{\em image} & cv\+::\+Mat (H,W) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{my__lib_8h_a76b0cd67a31e6d4b4b17bcb36e2d7c22}\label{my__lib_8h_a76b0cd67a31e6d4b4b17bcb36e2d7c22}} 
+\index{my\+\_\+lib.\+h@{my\+\_\+lib.\+h}!tensor\+To\+Mat@{tensor\+To\+Mat}}
+\index{tensor\+To\+Mat@{tensor\+To\+Mat}!my\+\_\+lib.\+h@{my\+\_\+lib.\+h}}
+\subsubsection{\texorpdfstring{tensor\+To\+Mat()}{tensorToMat()}}
+{\footnotesize\ttfamily Mat tensor\+To\+Mat (\begin{DoxyParamCaption}\item[{const at\+::\+Tensor \&}]{one\+\_\+heat\+\_\+map }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em one\+\_\+heat\+\_\+map} & at\+::tensor (H,W) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cv\+::\+Mat (H,W) 
+\end{DoxyReturn}

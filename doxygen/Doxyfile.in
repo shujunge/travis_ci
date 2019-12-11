@@ -1,0 +1,29 @@
+
+HTML_EXTRA_STYLESHEET = @CMAKE_CURRENT_SOURCE_DIR@/doxygen/customdoxygen.css
+HTML_HEADER = @CMAKE_CURRENT_SOURCE_DIR@/doxygen/header.html
+HTML_FOOTER = @CMAKE_CURRENT_SOURCE_DIR@/doxygen/footer.html
+
+PROJECT_NAME           = "@CMAKE_PROJECT_NAME@"
+PROJECT_NUMBER         = @VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_PATCH@
+STRIP_FROM_PATH        = @PROJECT_SOURCE_DIR@ \
+                         @PROJECT_BINARY_DIR@
+INPUT                  = @PROJECT_SOURCE_DIR@ \
+                         @PROJECT_BINARY_DIR@ \
+			 @CMAKE_CURRENT_SOURCE_DIR@/srcs #\
+                         #@PROJECT_SOURCE_DIR@/readme.md
+FILE_PATTERNS          = *.h \
+                         #*.md \
+                         #*.cpp
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXCLUDE_PATTERNS       = */thirdparty/*
+
+IMAGE_PATH = "@CMAKE_CURRENT_SOURCE_DIR@"
+
+USE_MDFILE_AS_MAINPAGE = "@CMAKE_CURRENT_SOURCE_DIR@/readme.md"
+
+# output location
+HTML_OUTPUT = "@CMAKE_CURRENT_SOURCE_DIR@/docs/html"
+
